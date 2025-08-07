@@ -6389,12 +6389,12 @@ export class TopicManager {
         id: 33,
         text: 'What is the output of printf("Hello - World\\n") without a semicolon?',
         options: [
-            { id: 'a', text: 'Error' },
+            { id: 'a', text: 'Compiler Error' },
             { id: 'b', text: 'Hello - World' },
             { id: 'c', text: 'No output' },
             { id: 'd', text: 'Hello' }
         ],
-        correctAnswer: 'b'
+        correctAnswer: 'a'
     },
     {
         id: 34,
@@ -6785,3 +6785,4 @@ export class TopicManager {
         return allQuestions;
     }
 }
+
