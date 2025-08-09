@@ -4385,1591 +4385,1118 @@ export class TopicManager {
                 color: '#ec4899',
                 questions: [
                     {
-        id: 1,
-        text: 'What is OOP?',
-        options: [
-            { id: 'a', text: 'A scripting language for web pages' },
-            { id: 'b', text: 'A function-based programming paradigm' },
-            { id: 'c', text: 'A database query language' },
-            { id: 'd', text: 'A paradigm centered on objects and classes with encapsulation, inheritance, polymorphism, abstraction' }
-        ],
-        correctAnswer: 'd'
-    },
-    {
-        id: 2,
-        text: 'What is the difference between Procedural Programming and OOP?',
-        options: [
-            { id: 'a', text: 'Procedural supports inheritance; OOP does not' },
-            { id: 'b', text: 'Procedural uses objects; OOP uses functions' },
-            { id: 'c', text: 'Procedural is function-based, global data; OOP is object-based, encapsulated data' },
-            { id: 'd', text: 'Procedural is bottom-up; OOP is top-down' }
-        ],
-        correctAnswer: 'c'
-    },
-    {
-        id: 3,
-        text: 'Why use OOP?',
-        options: [
-            { id: 'a', text: 'Only for small projects' },
-            { id: 'b', text: 'Enables modularity, reusability, encapsulation, polymorphism, abstraction' },
-            { id: 'c', text: 'Eliminates need for planning' },
-            { id: 'd', text: 'Increases complexity and reduces reusability' }
-        ],
-        correctAnswer: 'b'
-    },
-    {
-        id: 4,
-        text: 'What are the basic features of OOP?',
-        options: [
-            { id: 'a', text: 'Functions, loops, conditionals' },
-            { id: 'b', text: 'Variables, arrays, pointers' },
-            { id: 'c', text: 'Queries, joins, indexes' },
-            { id: 'd', text: 'Inheritance, encapsulation, polymorphism, abstraction' }
-        ],
-        correctAnswer: 'd'
-    },
-    {
-        id: 5,
-        text: 'What is Encapsulation?',
-        options: [
-            { id: 'a', text: 'Binding data and methods with restricted access' },
-            { id: 'b', text: 'Allowing multiple classes to inherit' },
-            { id: 'c', text: 'Overriding methods at runtime' },
-            { id: 'd', text: 'Hiding implementation details' }
-        ],
-        correctAnswer: 'a'
-    },
-    {
-        id: 6,
-        text: 'What is Abstraction? Which code demonstrates abstraction?',
-        options: [
-            { id: 'a', text: 'class Car { String make; void setMake(String m) { make = m; } }' },
-            { id: 'b', text: 'class Car { int speed = 60; }' },
-            { id: 'c', text: 'class Car { abstract void startEngine(); }' },
-            { id: 'd', text: 'class Car { void start() { System.out.println("Engine on"); } }' }
-        ],
-        correctAnswer: 'c'
-    },
-    {
-        id: 7,
-        text: 'What is Method Overloading? Which code shows method overloading?',
-        options: [
-            { id: 'a', text: 'class Calc { void add(int a, int b) { } }' },
-            { id: 'b', text: 'class Calc extends Math { int add(int a, int b) { return a + b; } }' },
-            { id: 'c', text: 'class Calc { int add(int a) { return a; } }' },
-            { id: 'd', text: 'class Calc { int add(int a, int b) { return a + b; } double add(double a, double b) { return a + b; } }' }
-        ],
-        correctAnswer: 'd'
-    },
-    {
-        id: 8,
-        text: 'What is Method Overriding?',
-        options: [
-            { id: 'a', text: 'Using static methods in a class' },
-            { id: 'b', text: 'Hiding data within a class' },
-            { id: 'c', text: 'Subclass redefining a superclass method' },
-            { id: 'd', text: 'Defining multiple methods with the same name in a class' }
-        ],
-        correctAnswer: 'c'
-    },
-    {
-        id: 9,
-        text: 'What are the types of inheritance?',
-        options: [
-            { id: 'a', text: 'Single, multiple, multilevel, multipath, hierarchical, hybrid' },
-            { id: 'b', text: 'Abstract, concrete, final' },
-            { id: 'c', text: 'Public, private, protected' },
-            { id: 'd', text: 'Static, dynamic, virtual' }
-        ],
-        correctAnswer: 'a'
-    },
-    {
-        id: 10,
-        text: 'What are the characteristics of OOP?',
-        options: [
-            { id: 'a', text: 'Loops, conditionals, functions' },
-            { id: 'b', text: 'Arrays, pointers, variables' },
-            { id: 'c', text: 'Encapsulation, abstraction, inheritance, polymorphism' },
-            { id: 'd', text: 'Indexes, queries, joins' }
-        ],
-        correctAnswer: 'c'
-    },
-    {
-        id: 11,
-        text: 'Can you call a base class method without an instance?',
-        options: [
-            { id: 'a', text: 'Yes, if it’s static or called via super/base in a subclass' },
-            { id: 'b', text: 'No, always requires an instance' },
-            { id: 'c', text: 'Only in abstract classes' },
-            { id: 'd', text: 'Only if it’s private' }
-        ],
-        correctAnswer: 'a'
-    },
-    {
-        id: 12,
-        text: 'What are the limitations of OOP?',
-        options: [
-            { id: 'a', text: 'Not ideal for small problems, complex testing, needs planning' },
-            { id: 'b', text: 'Eliminates modularity, reduces reusability' },
-            { id: 'c', text: 'Only works in functional programming' },
-            { id: 'd', text: 'Ideal for small problems, simple testing' }
-        ],
-        correctAnswer: 'a'
-    },
-    {
-        id: 13,
-        text: 'What are Constructors?',
-        options: [
-            { id: 'a', text: 'Methods to delete objects' },
-            { id: 'b', text: 'Methods to override functions' },
-            { id: 'c', text: 'Special methods to initialize objects' },
-            { id: 'd', text: 'Methods to hide data' }
-        ],
-        correctAnswer: 'c'
-    },
-    {
-        id: 14,
-        text: 'What are the types of constructors?',
-        options: [
-            { id: 'a', text: 'Single, multiple, hierarchical' },
-            { id: 'b', text: 'Abstract, concrete, virtual' },
-            { id: 'c', text: 'Default, parameterized, copy, static, private' },
-            { id: 'd', text: 'Public, private, protected' }
-        ],
-        correctAnswer: 'c'
-    },
-    {
-        id: 15,
-        text: 'What is the difference between a class and a structure?',
-        options: [
-            { id: 'a', text: 'Class has limited OOP support; structure has full support' },
-            { id: 'b', text: 'Class supports full OOP, inheritance; structure has limited support, no inheritance' },
-            { id: 'c', text: 'Class cannot have methods; structure can' },
-            { id: 'd', text: 'Class is for functions; structure is for objects' }
-        ],
-        correctAnswer: 'b'
-    },
-    {
-        id: 16,
-        text: 'What are access modifiers?',
-        options: [
-            { id: 'a', text: 'Types of inheritance' },
-            { id: 'b', text: 'Keywords controlling access: public, private, protected, internal' },
-            { id: 'c', text: 'Methods to override functions' },
-            { id: 'd', text: 'Tools for garbage collection' }
-        ],
-        correctAnswer: 'b'
-    },
-    {
-        id: 17,
-        text: 'Which are common OOP languages?',
-        options: [
-            { id: 'a', text: 'Java, Python, C++, JavaScript, Ruby' },
-            { id: 'b', text: 'Bash, Perl, Shell' },
-            { id: 'c', text: 'XML, JSON, YAML' },
-            { id: 'd', text: 'HTML, CSS, SQL' }
-        ],
-        correctAnswer: 'a'
-    },
-    {
-        id: 18,
-        text: 'What is Inheritance?',
-        options: [
-            { id: 'a', text: 'Child class acquiring properties from parent class' },
-            { id: 'b', text: 'Hiding data within a class' },
-            { id: 'c', text: 'Creating virtual functions' },
-            { id: 'd', text: 'Overloading methods' }
-        ],
-        correctAnswer: 'a'
-    },
-    {
-        id: 19,
-        text: 'What is Hybrid Inheritance?',
-        options: [
-            { id: 'a', text: 'Single class inheriting from multiple parents' },
-            { id: 'b', text: 'Combination of two or more inheritance types' },
-            { id: 'c', text: 'Inheritance without a parent class' },
-            { id: 'd', text: 'Inheritance only in abstract classes' }
-        ],
-        correctAnswer: 'b'
-    },
-    {
-        id: 20,
-        text: 'What is Hierarchical Inheritance?',
-        options: [
-            { id: 'a', text: 'A chain of single inheritances' },
-            { id: 'b', text: 'One class inherits from multiple parents' },
-            { id: 'c', text: 'Multiple classes inherit from one parent' },
-            { id: 'd', text: 'Inheritance without subclasses' }
-        ],
-        correctAnswer: 'c'
-    },
-    {
-        id: 21,
-        text: 'What are the limitations of inheritance?',
-        options: [
-            { id: 'a', text: 'Reduces coupling, simplifies hierarchy' },
-            { id: 'b', text: 'Eliminates polymorphism' },
-            { id: 'c', text: 'Prevents method overriding' },
-            { id: 'd', text: 'Tight coupling, complex hierarchy, diamond problem' }
-        ],
-        correctAnswer: 'd'
-    },
-    {
-        id: 22,
-        text: 'What is a Superclass?',
-        options: [
-            { id: 'a', text: 'An abstract class only' },
-            { id: 'b', text: 'A class with no methods' },
-            { id: 'c', text: 'A class that inherits from another' },
-            { id: 'd', text: 'The base class from which others inherit' }
-        ],
-        correctAnswer: 'd'
-    },
-    {
-        id: 23,
-        text: 'What is a Subclass?',
-        options: [
-            { id: 'a', text: 'A class that inherits from another class' },
-            { id: 'b', text: 'A class with only static methods' },
-            { id: 'c', text: 'A class that cannot be instantiated' },
-            { id: 'd', text: 'A class with no parent' }
-        ],
-        correctAnswer: 'a'
-    },
-    {
-        id: 24,
-        text: 'What is Polymorphism?',
-        options: [
-            { id: 'a', text: 'Hiding data within a class' },
-            { id: 'b', text: 'Processing objects differently based on type or class' },
-            { id: 'c', text: 'Creating multiple classes' },
-            { id: 'd', text: 'Preventing inheritance' }
-        ],
-        correctAnswer: 'b'
-    },
-    {
-        id: 25,
-        text: 'What is Static Polymorphism (Compile-Time)?',
-        options: [
-            { id: 'a', text: 'Achieved via garbage collection' },
-            { id: 'b', text: 'Achieved via method overriding' },
-            { id: 'c', text: 'Achieved via abstract classes' },
-            { id: 'd', text: 'Achieved via method overloading' }
-        ],
-        correctAnswer: 'd'
-    },
-    {
-    id: 26,
-    text: 'What is Dynamic Polymorphism (Runtime)?',
-    options: [
-        { id: 'a', text: 'Achieved via method overriding' }, // ✅
-        { id: 'b', text: 'Achieved via method overloading' },
-        { id: 'c', text: 'Achieved via static methods' },
-        { id: 'd', text: 'Achieved via encapsulation' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 27,
-    text: 'What is Operator Overloading?',
-    options: [
-        { id: 'a', text: 'Overriding methods in a superclass' },
-        { id: 'b', text: 'Hiding data in a class' },
-        { id: 'c', text: 'Custom implementation of operators for user-defined types' }, // ✅
-        { id: 'd', text: 'Creating abstract classes' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 28,
-    text: 'What is the difference between Overloading and Overriding?',
-    options: [
-        { id: 'a', text: 'Overloading: same class, different parameters; overriding: subclass, same parameters' }, // ✅
-        { id: 'b', text: 'Overloading hides data; overriding creates classes' },
-        { id: 'c', text: 'Overloading uses same parameters; overriding uses different' },
-        { id: 'd', text: 'Overloading is runtime; overriding is compile-time' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 29,
-    text: 'What is Encapsulation?',
-    options: [
-        { id: 'a', text: 'Creating multiple classes' },
-        { id: 'b', text: 'Overriding methods at runtime' },
-        { id: 'c', text: 'Inheriting from multiple parents' },
-        { id: 'd', text: 'Binding data and methods with restricted access' } // ✅
-    ],
-    correctAnswer: 'd'
-},
-{
-    id: 30,
-    text: 'What are Access Modifiers?',
-    options: [
-        { id: 'a', text: 'Methods to create objects' },
-        { id: 'b', text: 'Types of polymorphism' },
-        { id: 'c', text: 'Keywords controlling access: public, private, protected, internal' }, // ✅
-        { id: 'd', text: 'Tools for inheritance' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 31,
-    text: 'What is Data Abstraction?',
-    options: [
-        { id: 'a', text: 'Showing essential features, hiding internal details' }, // ✅
-        { id: 'b', text: 'Binding data and methods' },
-        { id: 'c', text: 'Overloading operators' },
-        { id: 'd', text: 'Creating subclasses' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 32,
-    text: 'How is Data Abstraction achieved?',
-    options: [
-        { id: 'a', text: 'Using method overloading' },
-        { id: 'b', text: 'Using access modifiers only' },
-        { id: 'c', text: 'Using abstract classes and abstract methods' }, // ✅
-        { id: 'd', text: 'Using static methods' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 33,
-    text: 'What is an Abstract Class?',
-    options: [
-        { id: 'a', text: 'A class that supports multiple inheritance' },
-        { id: 'b', text: 'A class with only concrete methods' },
-        { id: 'c', text: 'A class with no methods' },
-        { id: 'd', text: 'A class with at least one abstract method, cannot be instantiated' } // ✅
-    ],
-    correctAnswer: 'd'
-},
-{
-    id: 34,
-    text: 'What is the difference between Abstraction and Encapsulation?',
-    options: [
-        { id: 'a', text: 'Abstraction hides implementation; encapsulation hides data' }, // ✅
-        { id: 'b', text: 'Abstraction hides data; encapsulation hides implementation' },
-        { id: 'c', text: 'Abstraction is for methods; encapsulation is for classes' },
-        { id: 'd', text: 'Abstraction uses access modifiers; encapsulation uses interfaces' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 35,
-    text: 'What are Virtual Functions?',
-    options: [
-        { id: 'a', text: 'Methods that cannot be overridden' },
-        { id: 'b', text: 'Functions meant to be overridden in derived classes' }, // ✅
-        { id: 'c', text: 'Static methods in a class' },
-        { id: 'd', text: 'Methods for garbage collection' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 36,
-    text: 'What is a Destructor?',
-    options: [
-        { id: 'a', text: 'A method called when an object is destroyed for cleanup' }, // ✅
-        { id: 'b', text: 'A method to initialize objects' },
-        { id: 'c', text: 'A method to hide data' },
-        { id: 'd', text: 'A method to override functions' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 37,
-    text: 'What is a Copy Constructor?',
-    options: [
-        { id: 'a', text: 'A constructor to initialize variables' },
-        { id: 'b', text: 'A constructor for abstract classes' },
-        { id: 'c', text: 'A constructor for static objects' },
-        { id: 'd', text: 'A constructor to create a copy of an existing object' } // ✅
-    ],
-    correctAnswer: 'd'
-},
-{
-    id: 38,
-    text: 'What is finalize() in Java?',
-    options: [
-        { id: 'a', text: 'A method for cleanup before garbage collection' }, // ✅
-        { id: 'b', text: 'A method to initialize objects' },
-        { id: 'c', text: 'A method to create classes' },
-        { id: 'd', text: 'A method for method overriding' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 39,
-    text: 'What is Garbage Collection (GC)?',
-    options: [
-        { id: 'a', text: 'Method overloading' },
-        { id: 'b', text: 'Manual memory allocation' },
-        { id: 'c', text: 'Creating abstract classes' },
-        { id: 'd', text: 'Automatic memory management to reclaim unused memory' } // ✅
-    ],
-    correctAnswer: 'd'
-},
-{
-    id: 40,
-    text: 'What is a Final Variable?',
-    options: [
-        { id: 'a', text: 'A variable that can be reassigned' },
-        { id: 'b', text: 'A variable for abstract classes' },
-        { id: 'c', text: 'A variable assigned once, cannot be reassigned' }, // ✅
-        { id: 'd', text: 'A variable for method overriding' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 41,
-    text: 'What is a Final Method?',
-    options: [
-        { id: 'a', text: 'A method that cannot be overridden' }, // ✅
-        { id: 'b', text: 'A method that cannot be overloaded' },
-        { id: 'c', text: 'A method only for static calls' },
-        { id: 'd', text: 'A method used only in constructors' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 42,
-    text: 'What is a Final Class?',
-    options: [
-        { id: 'a', text: 'A class that cannot be inherited' }, // ✅
-        { id: 'b', text: 'A class with no methods' },
-        { id: 'c', text: 'A class that cannot create objects' },
-        { id: 'd', text: 'A class only for static methods' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 43,
-    text: 'What is Multiple Inheritance?',
-    options: [
-        { id: 'a', text: 'A class inheriting from multiple parents' }, // ✅
-        { id: 'b', text: 'A class implementing multiple interfaces' },
-        { id: 'c', text: 'A class with multiple constructors' },
-        { id: 'd', text: 'A class with multiple variables' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 44,
-    text: 'Does Java support Multiple Inheritance?',
-    options: [
-        { id: 'a', text: 'Yes, via classes' },
-        { id: 'b', text: 'No, but supports it via interfaces' }, // ✅
-        { id: 'c', text: 'Yes, for all types' },
-        { id: 'd', text: 'Only for static methods' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 45,
-    text: 'What is an Interface?',
-    options: [
-        { id: 'a', text: 'A class with implementation' },
-        { id: 'b', text: 'A blueprint of a class containing abstract methods' }, // ✅
-        { id: 'c', text: 'A class with constructors' },
-        { id: 'd', text: 'A static class' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 46,
-    text: 'What is the difference between Abstract Class and Interface?',
-    options: [
-        { id: 'a', text: 'Abstract class can have both abstract and concrete methods; interface has only abstract methods' }, // ✅
-        { id: 'b', text: 'Abstract class cannot have variables; interface can' },
-        { id: 'c', text: 'Interface can have constructors; abstract class cannot' },
-        { id: 'd', text: 'Interface supports multiple inheritance; abstract class does not' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 47,
-    text: 'What is the use of the "this" keyword?',
-    options: [
-        { id: 'a', text: 'Refers to the current instance of the class' }, // ✅
-        { id: 'b', text: 'Refers to the parent class' },
-        { id: 'c', text: 'Refers to a static variable' },
-        { id: 'd', text: 'Refers to an abstract method' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 48,
-    text: 'What is the use of the "super" keyword?',
-    options: [
-        { id: 'a', text: 'Calls a method in the same class' },
-        { id: 'b', text: 'Refers to the parent class and can call its methods/constructors' }, // ✅
-        { id: 'c', text: 'Refers to static methods only' },
-        { id: 'd', text: 'Refers to private variables' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 49,
-    text: 'What is Method Hiding?',
-    options: [
-        { id: 'a', text: 'When a static method in a subclass has the same signature as in the superclass' }, // ✅
-        { id: 'b', text: 'When an instance method is overridden' },
-        { id: 'c', text: 'When a method is private' },
-        { id: 'd', text: 'When a method is abstract' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 50,
-    text: 'What is the difference between Method Overloading and Method Hiding?',
-    options: [
-        { id: 'a', text: 'Overloading: same name, different parameters; Hiding: static method in subclass hides one in superclass' }, // ✅
-        { id: 'b', text: 'Overloading: runtime; Hiding: compile-time' },
-        { id: 'c', text: 'Overloading hides data; Hiding creates new classes' },
-        { id: 'd', text: 'Overloading is abstract; Hiding is final' }
-    ],
-    correctAnswer: 'a'
-},
-    {
-    id: 51,
-    text: 'What is an Interface?',
-    options: [
-        { id: 'c', text: 'A type of constructor' },
-        { id: 'a', text: 'A class with concrete methods' },
-        { id: 'd', text: 'A method for garbage collection' },
-        { id: 'b', text: 'A collection of abstract methods, supports multiple inheritance' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 52,
-    text: 'What are Pure Virtual Functions?',
-    options: [
-        { id: 'd', text: 'Methods for encapsulation' },
-        { id: 'c', text: 'Static methods in a class' },
-        { id: 'b', text: 'Methods without implementation in base class, defined in subclass' },
-        { id: 'a', text: 'Methods with implementation in base class' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 53,
-    text: 'What is the difference between a Class and a Method?',
-    options: [
-        { id: 'b', text: 'Class is a blueprint; method is a function inside a class' },
-        { id: 'a', text: 'Class is a function; method is a blueprint' },
-        { id: 'd', text: 'Class is for inheritance; method is for abstraction' },
-        { id: 'c', text: 'Class is for variables; method is for objects' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 54,
-    text: 'What is the difference between an Abstract Class and an Interface?',
-    options: [
-        { id: 'b', text: 'Abstract class can have concrete methods, single inheritance; interface has abstract methods, multiple inheritance' },
-        { id: 'd', text: 'Abstract class is for variables; interface is for methods' },
-        { id: 'a', text: 'Abstract class has only abstract methods; interface has concrete methods' },
-        { id: 'c', text: 'Abstract class supports multiple inheritance; interface does not' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 55,
-    text: 'What are Virtual Functions?',
-    options: [
-        { id: 'b', text: 'Functions meant to be overridden in derived classes' },
-        { id: 'a', text: 'Static methods in a class' },
-        { id: 'd', text: 'Methods for garbage collection' },
-        { id: 'c', text: 'Methods that cannot be overridden' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 56,
-    text: 'What are the characteristics of an Abstract Class?',
-    options: [
-        { id: 'a', text: 'Can be instantiated, only concrete methods' },
-        { id: 'c', text: 'Supports multiple inheritance, no methods' },
-        { id: 'b', text: 'Cannot be instantiated, may have abstract and concrete methods' },
-        { id: 'd', text: 'Only used for static methods' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 57,
-    text: 'What is Constructor Chaining?',
-    options: [
-        { id: 'c', text: 'Overriding constructors' },
-        { id: 'a', text: 'Calling methods from different classes' },
-        { id: 'b', text: 'Calling one constructor from another using this or super' },
-        { id: 'd', text: 'Hiding constructors' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 58,
-    text: 'What is Coupling?',
-    options: [
-        { id: 'b', text: 'Dependency between classes; loose is preferred' },
-        { id: 'd', text: 'Creating abstract methods' },
-        { id: 'a', text: 'High cohesion between methods' },
-        { id: 'c', text: 'Hiding data in a class' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 59,
-    text: 'Which operators cannot be overloaded?',
-    options: [
-        { id: 'b', text: '., .*, ::, ?:' },
-        { id: 'a', text: '+, -, *, /' },
-        { id: 'c', text: '==, !=, <, >' },
-        { id: 'd', text: '&&, ||, !' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 60,
-    text: 'What is Cohesion?',
-    options: [
-        { id: 'a', text: 'Dependency between classes' },
-        { id: 'd', text: 'Overriding methods' },
-        { id: 'c', text: 'Hiding data in a class' },
-        { id: 'b', text: 'How closely related a class’s responsibilities are; high is desirable' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 61,
-    text: 'What are levels of abstraction?',
-    options: [
-        { id: 'b', text: 'Low-level: implementation details; high-level: conceptual models' },
-        { id: 'd', text: 'Levels of method overriding' },
-        { id: 'a', text: 'Types of inheritance' },
-        { id: 'c', text: 'Types of access modifiers' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 62,
-    text: 'What are the types of variables in OOP?',
-    options: [
-        { id: 'c', text: 'Single, multiple, hierarchical' },
-        { id: 'a', text: 'Public, private, protected' },
-        { id: 'b', text: 'Primitive, reference, instance, static, local' },
-        { id: 'd', text: 'Abstract, concrete, virtual' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 63,
-    text: 'What is Garbage Collection in OOP?',
-    options: [
-        { id: 'd', text: 'Creating abstract classes' },
-        { id: 'a', text: 'Manual memory allocation' },
-        { id: 'b', text: 'Automatic memory management to remove unused objects' },
-        { id: 'c', text: 'Method overloading' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 64,
-    text: 'Can you run Java without OOP?',
-    options: [
-        { id: 'a', text: 'Yes, using static methods only' },
-        { id: 'd', text: 'Yes, using procedural code' },
-        { id: 'c', text: 'Yes, using interfaces only' },
-        { id: 'b', text: 'No, Java is fully based on OOP' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 65,
-    text: 'What is the output of this Java code involving inheritance and method visibility? (Assume a superclass Teacher with method teach() printing "This is a teacher" and a subclass MathsTeacher overriding teach() to print "This is a Maths teacher")',
-    options: [
-        { id: 'b', text: 'This is a Maths teacher' },
-        { id: 'c', text: 'No output' },
-        { id: 'a', text: 'This is a teacher' },
-        { id: 'd', text: 'Compile-time error' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 66,
-    text: 'What is Object-Oriented Programming (OOP)?',
-    options: [
-        { id: 'd', text: 'A scripting language for web pages' },
-        { id: 'a', text: 'A paradigm based on functions and procedures' },
-        { id: 'c', text: 'A database management system' },
-        { id: 'b', text: 'A paradigm organizing software as objects with data and methods' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 67,
-    text: 'Why use OOP?',
-    options: [
-        { id: 'b', text: 'Enables reusability, maintainability, encapsulation, polymorphism' },
-        { id: 'c', text: 'Best for small, simple problems' },
-        { id: 'd', text: 'Eliminates need for design planning' },
-        { id: 'a', text: 'Increases code complexity and reduces reusability' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 68,
-    text: 'What are other programming paradigms besides OOP?',
-    options: [
-        { id: 'b', text: 'Imperative (procedural, OOP, parallel), declarative (logical, functional, database)' },
-        { id: 'd', text: 'Public, private, protected' },
-        { id: 'a', text: 'Relational, transactional, analytical' },
-        { id: 'c', text: 'Static, dynamic, virtual' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 69,
-    text: 'What is the difference between Structured Programming and OOP?',
-    options: [
-        { id: 'c', text: 'Structured supports inheritance; OOP does not' },
-        { id: 'a', text: 'Structured is object-based; OOP is procedure-based' },
-        { id: 'b', text: 'Structured is top-down, procedure-based; OOP is bottom-up, object-based' },
-        { id: 'd', text: 'Structured is data-focused; OOP is code-focused' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 70,
-    text: 'What are common OOP languages?',
-    options: [
-        { id: 'd', text: 'XML, JSON, YAML' },
-        { id: 'c', text: 'Bash, Perl, Shell' },
-        { id: 'b', text: 'C++, Java, Python, JavaScript, C#, Ruby' },
-        { id: 'a', text: 'HTML, CSS, SQL' }
-    ],
-    correctAnswer: 'b'
-},
-    {
-    id: 76,
-    text: 'What is Inheritance?',
-    options: [
-        { id: 'a', text: 'Creating virtual functions' },
-        { id: 'b', text: 'Overloading methods' },
-        { id: 'c', text: 'Hiding data within a class' },
-        { id: 'd', text: 'Reusing code from parent to child class' }
-    ],
-    correctAnswer: 'd'
-},
-{
-    id: 77,
-    text: 'What is Polymorphism?',
-    options: [
-        { id: 'a', text: 'Objects behaving in multiple forms via overloading or overriding' },
-        { id: 'b', text: 'Preventing inheritance' },
-        { id: 'c', text: 'Hiding data in a class' },
-        { id: 'd', text: 'Creating multiple classes' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 78,
-    text: 'What are Access Specifiers?',
-    options: [
-        { id: 'a', text: 'Types of inheritance' },
-        { id: 'b', text: 'Tools for garbage collection' },
-        { id: 'c', text: 'Keywords controlling access: private, protected, public' },
-        { id: 'd', text: 'Methods for method overriding' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 79,
-    text: 'What is the difference between Overloading and Overriding?',
-    options: [
-        { id: 'a', text: 'Overloading: same class, different parameters; Overriding: derived class, same parameters' },
-        { id: 'b', text: 'Overloading hides data; Overriding creates classes' },
-        { id: 'c', text: 'Overloading: same parameters; Overriding: different parameters' },
-        { id: 'd', text: 'Overloading is runtime; Overriding is compile-time' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 80,
-    text: 'What is Multiple Inheritance?',
-    options: [
-        { id: 'a', text: 'One class inheriting from multiple parent classes' },
-        { id: 'b', text: 'Inheritance without a parent class' },
-        { id: 'c', text: 'Multiple classes inheriting from one parent' },
-        { id: 'd', text: 'One class inheriting from one parent' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 81,
-    text: 'What are the limitations of inheritance?',
-    options: [
-        { id: 'a', text: 'Tight coupling, complex hierarchy, increased execution time' },
-        { id: 'b', text: 'Eliminates polymorphism' },
-        { id: 'c', text: 'Prevents method overriding' },
-        { id: 'd', text: 'Reduces coupling, simplifies hierarchy' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 82,
-    text: 'What are the types of inheritance?',
-    options: [
-        { id: 'a', text: 'Static, dynamic, virtual' },
-        { id: 'b', text: 'Abstract, concrete, final' },
-        { id: 'c', text: 'Single, multiple, multilevel, hierarchical, hybrid' },
-        { id: 'd', text: 'Public, private, protected' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 83,
-    text: 'What is the difference between Interface and Abstract Class?',
-    options: [
-        { id: 'a', text: 'Interface supports single inheritance; Abstract class supports multiple' },
-        { id: 'b', text: 'Interface is for variables; Abstract class is for methods' },
-        { id: 'c', text: 'Interface: only abstract methods, multiple inheritance; Abstract class: both method types, single inheritance' },
-        { id: 'd', text: 'Interface has concrete methods; Abstract class has only abstract methods' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 84,
-    text: 'Do classes occupy memory?',
-    options: [
-        { id: 'a', text: 'Only objects consume memory' },
-        { id: 'b', text: 'Yes, classes consume memory like objects' },
-        { id: 'c', text: 'Only abstract classes consume memory' },
-        { id: 'd', text: 'Only static classes consume memory' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 85,
-    text: 'Is object creation necessary for method access?',
-    options: [
-        { id: 'a', text: 'Only for private methods' },
-        { id: 'b', text: 'No, static methods can be accessed via class name' },
-        { id: 'c', text: 'Yes, for all methods' },
-        { id: 'd', text: 'Only for abstract methods' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 86,
-    text: 'What is the difference between Class and Structure in C++?',
-    options: [
-        { id: 'a', text: 'Class: private by default, supports OOP; Structure: public by default, limited OOP' },
-        { id: 'b', text: 'Class is for functions; Structure is for objects' },
-        { id: 'c', text: 'Class cannot have methods; Structure can' },
-        { id: 'd', text: 'Class: public by default; Structure: private by default' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 87,
-    text: 'What is a Constructor?',
-    options: [
-        { id: 'a', text: 'A method to override functions' },
-        { id: 'b', text: 'A method to delete objects' },
-        { id: 'c', text: 'A method to hide data' },
-        { id: 'd', text: 'A method to initialize a newly created object' }
-    ],
-    correctAnswer: 'd'
-},
-{
-    id: 88,
-    text: 'What are the types of constructors in C++?',
-    options: [
-        { id: 'a', text: 'Default, non-parameterized, parameterized, copy, move' },
-        { id: 'b', text: 'Abstract, concrete, virtual' },
-        { id: 'c', text: 'Public, private, protected' },
-        { id: 'd', text: 'Single, multiple, hierarchical' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 89,
-    text: 'What is a Copy Constructor?',
-    options: [
-        { id: 'a', text: 'A constructor for static objects' },
-        { id: 'b', text: 'A constructor for abstract classes' },
-        { id: 'c', text: 'A constructor to initialize variables' },
-        { id: 'd', text: 'A constructor to create a copy of an existing object' }
-    ],
-    correctAnswer: 'd'
-},
-{
-    id: 90,
-    text: 'What is a Destructor?',
-    options: [
-        { id: 'a', text: 'A method to initialize objects' },
-        { id: 'b', text: 'A method to override functions' },
-        { id: 'c', text: 'A method called when an object is destroyed for cleanup' },
-        { id: 'd', text: 'A method to hide data' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 91,
-    text: 'Can constructors be overloaded?',
-    options: [
-        { id: 'a', text: 'Only in interfaces' },
-        { id: 'b', text: 'Only in abstract classes' },
-        { id: 'c', text: 'Yes, constructors can be overloaded' },
-        { id: 'd', text: 'No, only one constructor per class' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 92,
-    text: 'Can destructors be overloaded?',
-    options: [
-        { id: 'a', text: 'Only in abstract classes' },
-        { id: 'b', text: 'Yes, like constructors' },
-        { id: 'c', text: 'Only in derived classes' },
-        { id: 'd', text: 'No, only one destructor per class' }
-    ],
-    correctAnswer: 'd'
-},
-{
-    id: 93,
-    text: 'What is a Friend Function?',
-    options: [
-        { id: 'a', text: 'A function for method overriding' },
-        { id: 'b', text: 'A function for garbage collection' },
-        { id: 'c', text: 'A function that can access private/protected members of a class' },
-        { id: 'd', text: 'A function to initialize objects' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 94,
-    text: 'What is a Friend Class?',
-    options: [
-        { id: 'a', text: 'A class for method overloading' },
-        { id: 'b', text: 'A class that can access private/protected members of another class' },
-        { id: 'c', text: 'A class with only static methods' },
-        { id: 'd', text: 'A class for abstract methods' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 95,
-    text: 'What is a Virtual Function?',
-    options: [
-        { id: 'a', text: 'A function meant to be overridden for dynamic resolution' },
-        { id: 'b', text: 'A function that cannot be overridden' },
-        { id: 'c', text: 'A static method in a class' },
-        { id: 'd', text: 'A function for encapsulation' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 96,
-    text: 'What is a Pure Virtual Function?',
-    options: [
-        { id: 'a', text: 'A static function in a class' },
-        { id: 'b', text: 'A function with implementation in base class' },
-        { id: 'c', text: 'A function with no body, requires implementation in derived class' },
-        { id: 'd', text: 'A function for method overloading' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 97,
-    text: 'What is an Abstract Class?',
-    options: [
-        { id: 'a', text: 'A class with at least one abstract method, cannot be instantiated' },
-        { id: 'b', text: 'A class with only concrete methods' },
-        { id: 'c', text: 'A class with no methods' },
-        { id: 'd', text: 'A class that supports multiple inheritance' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 98,
-    text: 'What is the Super Keyword?',
-    options: [
-        { id: 'a', text: 'Creates abstract methods' },
-        { id: 'b', text: 'Calls superclass methods or constructors' },
-        { id: 'c', text: 'Refers to the current object' },
-        { id: 'd', text: 'Handles exceptions' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 99,
-    text: 'What is the this Keyword?',
-    options: [
-        { id: 'a', text: 'Refers to the current object' },
-        { id: 'b', text: 'Calls superclass methods' },
-        { id: 'c', text: 'Creates static methods' },
-        { id: 'd', text: 'Hides data in a class' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 100,
-    text: 'What are Access Specifiers (Summary)?',
-    options: [
-        { id: 'a', text: 'Private: within class; Protected: class and derived; Public: everywhere' },
-        { id: 'b', text: 'Tools for inheritance' },
-        { id: 'c', text: 'Types of polymorphism' },
-        { id: 'd', text: 'Methods for method overriding' }
-    ],
-    correctAnswer: 'a'
-},
-    {
-    id: 101,
-    text: 'What is an Exception?',
-    options: [
-        { id: 'c', text: 'A method to initialize objects' },
-        { id: 'a', text: 'A syntax error' },
-        { id: 'b', text: 'An abnormal event during program execution' },
-        { id: 'd', text: 'A type of inheritance' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 102,
-    text: 'What is Exception Handling?',
-    options: [
-        { id: 'd', text: 'Hiding data in a class' },
-        { id: 'a', text: 'Creating abstract classes' },
-        { id: 'b', text: 'Catching and handling exceptions' },
-        { id: 'c', text: 'Overloading methods' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 103,
-    text: 'What is Garbage Collection?',
-    options: [
-        { id: 'b', text: 'Automatic memory management for unused objects' },
-        { id: 'a', text: 'Manual memory allocation' },
-        { id: 'd', text: 'Creating abstract classes' },
-        { id: 'c', text: 'Method overloading' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 104,
-    text: 'Is Java fully object-oriented?',
-    options: [
-        { id: 'a', text: 'No, it supports procedural programming' },
-        { id: 'b', text: 'Yes, it requires OOP principles' },
-        { id: 'c', text: 'Only for static methods' },
-        { id: 'd', text: 'Only for interfaces' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 105,
-    text: 'What is the output of this C++ code? (class Student { public: string name; }; int main() { Student student1; student1.name = "Rahul"; cout << student1.name; return 0; })',
-    options: [
-        { id: 'b', text: 'Rahul' },
-        { id: 'a', text: 'student1' },
-        { id: 'c', text: 'No output' },
-        { id: 'd', text: 'Compile-time error' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 106,
-    text: 'What is Object-Oriented Programming (OOP)?',
-    options: [
-        { id: 'c', text: 'A database query language' },
-        { id: 'b', text: 'A paradigm organizing software as objects with data and methods' },
-        { id: 'a', text: 'A function-based programming paradigm' },
-        { id: 'd', text: 'A scripting language for web pages' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 107,
-    text: 'Why use OOP?',
-    options: [
-        { id: 'c', text: 'Ideal for small, simple problems' },
-        { id: 'a', text: 'Increases complexity, reduces reusability' },
-        { id: 'b', text: 'Improves readability, maintainability, reusability via encapsulation, polymorphism' },
-        { id: 'd', text: 'Eliminates design planning' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 108,
-    text: 'What are programming paradigms other than OOP?',
-    options: [
-        { id: 'b', text: 'Imperative (procedural, OOP, parallel), declarative (logical, functional, database)' },
-        { id: 'd', text: 'Public, private, protected' },
-        { id: 'a', text: 'Relational, transactional, analytical' },
-        { id: 'c', text: 'Static, dynamic, virtual' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 109,
-    text: 'What is the difference between Structured Programming and OOP?',
-    options: [
-        { id: 'b', text: 'Structured is top-down, procedure-based; OOP is bottom-up, object-based' },
-        { id: 'a', text: 'Structured is object-based; OOP is procedure-based' },
-        { id: 'd', text: 'Structured is data-focused; OOP is code-focused' },
-        { id: 'c', text: 'Structured supports inheritance; OOP does not' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 110,
-    text: 'What are major OOP languages?',
-    options: [
-        { id: 'b', text: 'Java, C++, Python, JavaScript, PHP' },
-        { id: 'd', text: 'XML, JSON, YAML' },
-        { id: 'a', text: 'HTML, CSS, SQL' },
-        { id: 'c', text: 'Bash, Perl, Shell' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 111,
-    text: 'What is a class?',
-    options: [
-        { id: 'd', text: 'A database table' },
-        { id: 'b', text: 'A blueprint for objects with data and methods' },
-        { id: 'a', text: 'An instance of an object' },
-        { id: 'c', text: 'A function for procedures' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 112,
-    text: 'What is an object?',
-    options: [
-        { id: 'b', text: 'An instance of a class with state and behavior' },
-        { id: 'a', text: 'A blueprint for classes' },
-        { id: 'd', text: 'A database query' },
-        { id: 'c', text: 'A static method' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 113,
-    text: 'What is Encapsulation?',
-    options: [
-        { id: 'b', text: 'Bundling data and methods with restricted access' },
-        { id: 'a', text: 'Hiding implementation details' },
-        { id: 'd', text: 'Overriding methods at runtime' },
-        { id: 'c', text: 'Inheriting from multiple classes' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 114,
-    text: 'What is Abstraction?',
-    options: [
-        { id: 'b', text: 'Showing essential features, hiding implementation' },
-        { id: 'c', text: 'Overloading operators' },
-        { id: 'a', text: 'Bundling data and methods' },
-        { id: 'd', text: 'Creating subclasses' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 115,
-    text: 'What is Inheritance?',
-    options: [
-        { id: 'b', text: 'Deriving features from a parent class to a child class' },
-        { id: 'a', text: 'Hiding data within a class' },
-        { id: 'd', text: 'Creating virtual functions' },
-        { id: 'c', text: 'Overloading methods' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 116,
-    text: 'What is Polymorphism?',
-    options: [
-        { id: 'a', text: 'Hiding data in a class' },
-        { id: 'b', text: 'Objects behaving differently via overloading or overriding' },
-        { id: 'c', text: 'Creating multiple classes' },
-        { id: 'd', text: 'Preventing inheritance' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 117,
-    text: 'What are access specifiers?',
-    options: [
-        { id: 'b', text: 'Keywords controlling access: public, private, protected' },
-        { id: 'a', text: 'Methods for method overriding' },
-        { id: 'd', text: 'Tools for garbage collection' },
-        { id: 'c', text: 'Types of inheritance' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 118,
-    text: 'What is the difference between Overloading and Overriding?',
-    options: [
-        { id: 'b', text: 'Overloading: same class, different parameters; Overriding: derived class, same parameters' },
-        { id: 'd', text: 'Overloading hides data; Overriding creates classes' },
-        { id: 'a', text: 'Overloading: same parameters; Overriding: different parameters' },
-        { id: 'c', text: 'Overloading is runtime; Overriding is compile-time' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 119,
-    text: 'What are the limitations of Inheritance?',
-    options: [
-        { id: 'b', text: 'Increases coupling, complex hierarchies' },
-        { id: 'a', text: 'Reduces coupling, simplifies hierarchy' },
-        { id: 'c', text: 'Eliminates polymorphism' },
-        { id: 'd', text: 'Prevents method overriding' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 120,
-    text: 'What are the types of Inheritance?',
-    options: [
-        { id: 'b', text: 'Single, multiple, multilevel, hierarchical, hybrid' },
-        { id: 'd', text: 'Abstract, concrete, final' },
-        { id: 'c', text: 'Static, dynamic, virtual' },
-        { id: 'a', text: 'Public, private, protected' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 121,
-    text: 'What is the difference between Interface and Abstract Class?',
-    options: [
-        { id: 'b', text: 'Interface: only abstract methods, multiple inheritance; Abstract class: both method types, single inheritance' },
-        { id: 'a', text: 'Interface has concrete methods; Abstract class has only abstract methods' },
-        { id: 'c', text: 'Interface supports single inheritance; Abstract class supports multiple' },
-        { id: 'd', text: 'Interface is for variables; Abstract class is for methods' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 122,
-    text: 'Do classes occupy memory?',
-    options: [
-        { id: 'b', text: 'No, only objects consume memory' },
-        { id: 'a', text: 'Yes, classes consume memory like objects' },
-        { id: 'c', text: 'Only abstract classes consume memory' },
-        { id: 'd', text: 'Only static classes consume memory' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 123,
-    text: 'Is object creation necessary for method access?',
-    options: [
-        { id: 'a', text: 'Yes, for all methods' },
-        { id: 'c', text: 'Only for private methods' },
-        { id: 'd', text: 'Only for abstract methods' },
-        { id: 'b', text: 'No, static methods can be accessed via class name' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 124,
-    text: 'What is the difference between Class and Structure in C++?',
-    options: [
-        { id: 'b', text: 'Class: private by default, supports OOP; Structure: public by default' },
-        { id: 'a', text: 'Class: public by default; Structure: private by default' },
-        { id: 'c', text: 'Class is for functions; Structure is for objects' },
-        { id: 'd', text: 'Class cannot have methods; Structure can' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 125,
-    text: 'What is a Constructor?',
-    options: [
-        { id: 'b', text: 'A method to initialize a newly created object' },
-        { id: 'a', text: 'A method to delete objects' },
-        { id: 'd', text: 'A method to hide data' },
-        { id: 'c', text: 'A method to override functions' }
-    ],
-    correctAnswer: 'b'
-},
-    {
-    id: 126,
-    text: 'What are the types of constructors in C++?',
-    options: [
-        { id: 'a', text: 'Default, parameterized, copy' },
-        { id: 'b', text: 'Abstract, concrete, virtual' },
-        { id: 'c', text: 'Public, private, protected' },
-        { id: 'd', text: 'Single, multiple, hierarchical' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 127,
-    text: 'What is a Copy Constructor?',
-    options: [
-        { id: 'a', text: 'A constructor to initialize variables' },
-        { id: 'b', text: 'A constructor for static objects' },
-        { id: 'c', text: 'A constructor for abstract classes' },
-        { id: 'd', text: 'A constructor to create a copy of an existing object' }
-    ],
-    correctAnswer: 'd'
-},
-{
-    id: 128,
-    text: 'What is a Destructor?',
-    options: [
-        { id: 'a', text: 'A method to hide data' },
-        { id: 'b', text: 'A method to initialize objects' },
-        { id: 'c', text: 'A method called when an object is destroyed for cleanup' },
-        { id: 'd', text: 'A method to override functions' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 129,
-    text: 'Can constructors be overloaded?',
-    options: [
-        { id: 'a', text: 'Yes, constructors can be overloaded' },
-        { id: 'b', text: 'Only in abstract classes' },
-        { id: 'c', text: 'Only in interfaces' },
-        { id: 'd', text: 'No, only one constructor per class' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 130,
-    text: 'Can destructors be overloaded?',
-    options: [
-        { id: 'a', text: 'Only in abstract classes' },
-        { id: 'b', text: 'Yes, like constructors' },
-        { id: 'c', text: 'No, only one destructor per class' },
-        { id: 'd', text: 'Only in derived classes' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 131,
-    text: 'What is a Friend Function?',
-    options: [
-        { id: 'a', text: 'A function to initialize objects' },
-        { id: 'b', text: 'A function for garbage collection' },
-        { id: 'c', text: 'A function for method overriding' },
-        { id: 'd', text: 'A function that can access private/protected members of a class' }
-    ],
-    correctAnswer: 'd'
-},
-{
-    id: 132,
-    text: 'What is a Friend Class?',
-    options: [
-        { id: 'a', text: 'A class for method overloading' },
-        { id: 'b', text: 'A class with only static methods' },
-        { id: 'c', text: 'A class that can access private/protected members of another class' },
-        { id: 'd', text: 'A class for abstract methods' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 133,
-    text: 'What is a Virtual Function?',
-    options: [
-        { id: 'a', text: 'A function for encapsulation' },
-        { id: 'b', text: 'A static method in a class' },
-        { id: 'c', text: 'A function meant to be overridden for dynamic resolution' },
-        { id: 'd', text: 'A function that cannot be overridden' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 134,
-    text: 'What is a Pure Virtual Function?',
-    options: [
-        { id: 'a', text: 'A static function in a class' },
-        { id: 'b', text: 'A function with implementation in base class' },
-        { id: 'c', text: 'A function for method overloading' },
-        { id: 'd', text: 'A function with no body, requires implementation in derived class' }
-    ],
-    correctAnswer: 'd'
-},
-{
-    id: 135,
-    text: 'What is an Abstract Class?',
-    options: [
-        { id: 'a', text: 'A class that supports multiple inheritance' },
-        { id: 'b', text: 'A class with no methods' },
-        { id: 'c', text: 'A class with only concrete methods' },
-        { id: 'd', text: 'A class with at least one abstract method, cannot be instantiated' }
-    ],
-    correctAnswer: 'd'
-},
-{
-    id: 136,
-    text: 'What is the output of this C++ destructor code? (class base { public: ~base() { cout << "Destructor called"; } };)',
-    options: [
-        { id: 'a', text: 'Destructor called' },
-        { id: 'b', text: 'No output' },
-        { id: 'c', text: 'base' },
-        { id: 'd', text: 'Compile-time error' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 137,
-    text: 'What is the Super Keyword?',
-    options: [
-        { id: 'a', text: 'Handles exceptions' },
-        { id: 'b', text: 'Calls superclass methods or constructors' },
-        { id: 'c', text: 'Refers to the current object' },
-        { id: 'd', text: 'Creates abstract methods' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 138,
-    text: 'What is the this Keyword?',
-    options: [
-        { id: 'a', text: 'Refers to the current object' },
-        { id: 'b', text: 'Calls superclass methods' },
-        { id: 'c', text: 'Creates static methods' },
-        { id: 'd', text: 'Hides data in a class' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 139,
-    text: 'What is an Exception?',
-    options: [
-        { id: 'a', text: 'A type of inheritance' },
-        { id: 'b', text: 'A method to initialize objects' },
-        { id: 'c', text: 'A runtime error or unexpected condition' },
-        { id: 'd', text: 'A syntax error' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 140,
-    text: 'What is Exception Handling?',
-    options: [
-        { id: 'a', text: 'Overloading methods' },
-        { id: 'b', text: 'Handling runtime errors using try-catch blocks' },
-        { id: 'c', text: 'Creating abstract classes' },
-        { id: 'd', text: 'Hiding data in a class' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 141,
-    text: 'What is Garbage Collection?',
-    options: [
-        { id: 'a', text: 'Automatic memory management for unused objects' },
-        { id: 'b', text: 'Manual memory allocation' },
-        { id: 'c', text: 'Method overloading' },
-        { id: 'd', text: 'Creating abstract classes' }
-    ],
-    correctAnswer: 'a'
-},
-{
-    id: 142,
-    text: 'Is OOP mandatory in Java?',
-    options: [
-        { id: 'a', text: 'Only for interfaces' },
-        { id: 'b', text: 'Only for static methods' },
-        { id: 'c', text: 'No, supports procedural programming' },
-        { id: 'd', text: 'Yes, Java is fully OOP-based' }
-    ],
-    correctAnswer: 'd'
-},
-{
-    id: 143,
-    text: 'How does C++ support Polymorphism?',
-    options: [
-        { id: 'a', text: 'Only through abstract classes' },
-        { id: 'b', text: 'Only through inheritance' },
-        { id: 'c', text: 'Only through static methods' },
-        { id: 'd', text: 'Compile-time: templates, overloading; Runtime: virtual functions' }
-    ],
-    correctAnswer: 'd'
-},
-{
-    id: 144,
-    text: 'What is an example of Inheritance?',
-    options: [
-        { id: 'a', text: 'Overloading methods' },
-        { id: 'b', text: 'Creating virtual functions' },
-        { id: 'c', text: 'Hiding data in a class' },
-        { id: 'd', text: 'Vehicle base class with Car, Truck, Bus inheriting features' }
-    ],
-    correctAnswer: 'd'
-},
-{
-    id: 145,
-    text: 'What is the output of C++ code with multiple inheritance constructor order? (Assume BaseClass1, BaseClass2, DerivedClass constructors print their names)',
-    options: [
-        { id: 'a', text: 'DerivedClass only' },
-        { id: 'b', text: 'BaseClass1, BaseClass2, DerivedClass' },
-        { id: 'c', text: 'DerivedClass, BaseClass1, BaseClass2' },
-        { id: 'd', text: 'No output' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 146,
-    text: 'What is the output of Java code with static block execution order? (Assume blocks print b, c, a, and main prints 100)',
-    options: [
-        { id: 'a', text: '100, a, b, c' },
-        { id: 'b', text: 'b, c, a, 100' },
-        { id: 'c', text: 'a, b, c, 100' },
-        { id: 'd', text: 'No output' }
-    ],
-    correctAnswer: 'b'
-},
-{
-    id: 147,
-    text: 'What is the output of C++ code with conversion constructor and operator overloading? (Assume prints i = 10, i = 20)',
-    options: [
-        { id: 'a', text: 'i = 20, i = 10' },
-        { id: 'b', text: 'Compile-time error' },
-        { id: 'c', text: 'i = 10, i = 20' },
-        { id: 'd', text: 'i = 10' }
-    ],
-    correctAnswer: 'c'
-},
-{
-    id: 148,
-    text: 'What is the output of Java code with overloaded main method? (Assume main prints Main1)',
-    options: [
-        { id: 'a', text: 'Main2' },
-        { id: 'b', text: 'No output' },
-        { id: 'c', text: 'Compile-time error' },
-        { id: 'd', text: 'Main1' }
-    ],
-    correctAnswer: 'd'
-},
-{
-    id: 149,
-    text: 'What is the output of C++ code with multilevel inheritance method call? (Assume class B overrides method to print Inside B)',
-    options: [
-        { id: 'a', text: 'Inside B' },
-        { id: 'b', text: 'No output' },
-        { id: 'c', text: 'Compile-time error' },
-        { id: 'd', text: 'Inside A' }
-    ],
-    correctAnswer: 'a'
+id: 1,
+text: 'What is OOP?',
+options: [
+{ id: 'a', text: 'A scripting language for web pages' },
+{ id: 'b', text: 'A function-based programming paradigm' },
+{ id: 'c', text: 'A database query language' },
+{ id: 'd', text: 'A paradigm centered on objects and classes with encapsulation, inheritance, polymorphism, abstraction' }
+],
+correctAnswer: 'd'
+},
+{
+id: 2,
+text: 'What is the difference between Procedural Programming and OOP?',
+options: [
+{ id: 'a', text: 'Procedural supports inheritance; OOP does not' },
+{ id: 'b', text: 'Procedural uses objects; OOP uses functions' },
+{ id: 'c', text: 'Procedural is function-based, global data; OOP is object-based, encapsulated data' },
+{ id: 'd', text: 'Procedural is bottom-up; OOP is top-down' }
+],
+correctAnswer: 'c'
+},
+{
+id: 3,
+text: 'Why use OOP?',
+options: [
+{ id: 'a', text: 'Only for small projects' },
+{ id: 'b', text: 'Enables modularity, reusability, encapsulation, polymorphism, abstraction' },
+{ id: 'c', text: 'Eliminates need for planning' },
+{ id: 'd', text: 'Increases complexity and reduces reusability' }
+],
+correctAnswer: 'b'
+},
+{
+id: 4,
+text: 'What are the basic features of OOP?',
+options: [
+{ id: 'a', text: 'Functions, loops, conditionals' },
+{ id: 'b', text: 'Variables, arrays, pointers' },
+{ id: 'c', text: 'Queries, joins, indexes' },
+{ id: 'd', text: 'Inheritance, encapsulation, polymorphism, abstraction' }
+],
+correctAnswer: 'd'
+},
+{
+id: 5,
+text: 'What is Encapsulation?',
+options: [
+{ id: 'a', text: 'Binding data and methods with restricted access' },
+{ id: 'b', text: 'Allowing multiple classes to inherit' },
+{ id: 'c', text: 'Overriding methods at runtime' },
+{ id: 'd', text: 'Hiding implementation details' }
+],
+correctAnswer: 'a'
+},
+{
+id: 6,
+text: 'What is Abstraction? Which code demonstrates abstraction?',
+options: [
+{ id: 'a', text: 'class Car { String make; void setMake(String m) { make = m; } }' },
+{ id: 'b', text: 'class Car { int speed = 60; }' },
+{ id: 'c', text: 'class Car { abstract void startEngine(); }' },
+{ id: 'd', text: 'class Car { void start() { System.out.println("Engine on"); } }' }
+],
+correctAnswer: 'c'
+},
+{
+id: 7,
+text: 'What is Method Overloading? Which code shows method overloading?',
+options: [
+{ id: 'a', text: 'class Calc { void add(int a, int b) { } }' },
+{ id: 'b', text: 'class Calc extends Math { int add(int a, int b) { return a + b; } }' },
+{ id: 'c', text: 'class Calc { int add(int a) { return a; } }' },
+{ id: 'd', text: 'class Calc { int add(int a, int b) { return a + b; } double add(double a, double b) { return a + b; } }' }
+],
+correctAnswer: 'd'
+},
+{
+id: 8,
+text: 'What is Method Overriding?',
+options: [
+{ id: 'a', text: 'Using static methods in a class' },
+{ id: 'b', text: 'Hiding data within a class' },
+{ id: 'c', text: 'Subclass redefining a superclass method' },
+{ id: 'd', text: 'Defining multiple methods with the same name in a class' }
+],
+correctAnswer: 'c'
+},
+{
+id: 9,
+text: 'What are the types of inheritance?',
+options: [
+{ id: 'a', text: 'Single, multiple, multilevel, multipath, hierarchical, hybrid' },
+{ id: 'b', text: 'Abstract, concrete, final' },
+{ id: 'c', text: 'Public, private, protected' },
+{ id: 'd', text: 'Static, dynamic, virtual' }
+],
+correctAnswer: 'a'
+},
+{
+id: 10,
+text: 'What are the characteristics of OOP?',
+options: [
+{ id: 'a', text: 'Loops, conditionals, functions' },
+{ id: 'b', text: 'Arrays, pointers, variables' },
+{ id: 'c', text: 'Encapsulation, abstraction, inheritance, polymorphism' },
+{ id: 'd', text: 'Indexes, queries, joins' }
+],
+correctAnswer: 'c'
+},
+{
+id: 11,
+text: 'Can you call a base class method without an instance?',
+options: [
+{ id: 'a', text: 'Yes, if it’s static or called via super/base in a subclass' },
+{ id: 'b', text: 'No, always requires an instance' },
+{ id: 'c', text: 'Only in abstract classes' },
+{ id: 'd', text: 'Only if it’s private' }
+],
+correctAnswer: 'a'
+},
+{
+id: 12,
+text: 'What are the limitations of OOP?',
+options: [
+{ id: 'a', text: 'Not ideal for small problems, complex testing, needs planning' },
+{ id: 'b', text: 'Eliminates modularity, reduces reusability' },
+{ id: 'c', text: 'Only works in functional programming' },
+{ id: 'd', text: 'Ideal for small problems, simple testing' }
+],
+correctAnswer: 'a'
+},
+{
+id: 13,
+text: 'What are Constructors?',
+options: [
+{ id: 'a', text: 'Methods to delete objects' },
+{ id: 'b', text: 'Methods to override functions' },
+{ id: 'c', text: 'Special methods to initialize objects' },
+{ id: 'd', text: 'Methods to hide data' }
+],
+correctAnswer: 'c'
+},
+{
+id: 14,
+text: 'What are the types of constructors?',
+options: [
+{ id: 'a', text: 'Single, multiple, hierarchical' },
+{ id: 'b', text: 'Abstract, concrete, virtual' },
+{ id: 'c', text: 'Default, parameterized, copy, static, private' },
+{ id: 'd', text: 'Public, private, protected' }
+],
+correctAnswer: 'c'
+},
+{
+id: 15,
+text: 'What is the difference between a class and a structure?',
+options: [
+{ id: 'a', text: 'Class has limited OOP support; structure has full support' },
+{ id: 'b', text: 'Class supports full OOP, inheritance; structure has limited support, no inheritance' },
+{ id: 'c', text: 'Class cannot have methods; structure can' },
+{ id: 'd', text: 'Class is for functions; structure is for objects' }
+],
+correctAnswer: 'b'
+},
+{
+id: 16,
+text: 'What are access modifiers?',
+options: [
+{ id: 'a', text: 'Types of inheritance' },
+{ id: 'b', text: 'Keywords controlling access: public, private, protected, internal' },
+{ id: 'c', text: 'Methods to override functions' },
+{ id: 'd', text: 'Tools for garbage collection' }
+],
+correctAnswer: 'b'
+},
+{
+id: 17,
+text: 'Which are common OOP languages?',
+options: [
+{ id: 'a', text: 'Java, Python, C++, JavaScript, Ruby' },
+{ id: 'b', text: 'Bash, Perl, Shell' },
+{ id: 'c', text: 'XML, JSON, YAML' },
+{ id: 'd', text: 'HTML, CSS, SQL' }
+],
+correctAnswer: 'a'
+},
+{
+id: 18,
+text: 'What is Inheritance?',
+options: [
+{ id: 'a', text: 'Child class acquiring properties from parent class' },
+{ id: 'b', text: 'Hiding data within a class' },
+{ id: 'c', text: 'Creating virtual functions' },
+{ id: 'd', text: 'Overloading methods' }
+],
+correctAnswer: 'a'
+},
+{
+id: 19,
+text: 'What is Hybrid Inheritance?',
+options: [
+{ id: 'a', text: 'Single class inheriting from multiple parents' },
+{ id: 'b', text: 'Combination of two or more inheritance types' },
+{ id: 'c', text: 'Inheritance without a parent class' },
+{ id: 'd', text: 'Inheritance only in abstract classes' }
+],
+correctAnswer: 'b'
+},
+{
+id: 20,
+text: 'What is Hierarchical Inheritance?',
+options: [
+{ id: 'a', text: 'A chain of single inheritances' },
+{ id: 'b', text: 'One class inherits from multiple parents' },
+{ id: 'c', text: 'Multiple classes inherit from one parent' },
+{ id: 'd', text: 'Inheritance without subclasses' }
+],
+correctAnswer: 'c'
+},
+{
+id: 21,
+text: 'What are the limitations of inheritance?',
+options: [
+{ id: 'a', text: 'Reduces coupling, simplifies hierarchy' },
+{ id: 'b', text: 'Eliminates polymorphism' },
+{ id: 'c', text: 'Prevents method overriding' },
+{ id: 'd', text: 'Tight coupling, complex hierarchy, diamond problem' }
+],
+correctAnswer: 'd'
+},
+{
+id: 22,
+text: 'What is a Superclass?',
+options: [
+{ id: 'a', text: 'An abstract class only' },
+{ id: 'b', text: 'A class with no methods' },
+{ id: 'c', text: 'A class that inherits from another' },
+{ id: 'd', text: 'The base class from which others inherit' }
+],
+correctAnswer: 'd'
+},
+{
+id: 23,
+text: 'What is a Subclass?',
+options: [
+{ id: 'a', text: 'A class that inherits from another class' },
+{ id: 'b', text: 'A class with only static methods' },
+{ id: 'c', text: 'A class that cannot be instantiated' },
+{ id: 'd', text: 'A class with no parent' }
+],
+correctAnswer: 'a'
+},
+{
+id: 24,
+text: 'What is Polymorphism?',
+options: [
+{ id: 'a', text: 'Hiding data within a class' },
+{ id: 'b', text: 'Processing objects differently based on type or class' },
+{ id: 'c', text: 'Creating multiple classes' },
+{ id: 'd', text: 'Preventing inheritance' }
+],
+correctAnswer: 'b'
+},
+{
+id: 25,
+text: 'What is Static Polymorphism (Compile-Time)?',
+options: [
+{ id: 'a', text: 'Achieved via garbage collection' },
+{ id: 'b', text: 'Achieved via method overriding' },
+{ id: 'c', text: 'Achieved via abstract classes' },
+{ id: 'd', text: 'Achieved via method overloading' }
+],
+correctAnswer: 'd'
+},
+{
+id: 26,
+text: 'What is Dynamic Polymorphism (Runtime)?',
+options: [
+{ id: 'a', text: 'Achieved via method overriding' },
+{ id: 'b', text: 'Achieved via method overloading' },
+{ id: 'c', text: 'Achieved via static methods' },
+{ id: 'd', text: 'Achieved via encapsulation' }
+],
+correctAnswer: 'a'
+},
+{
+id: 27,
+text: 'What is Operator Overloading?',
+options: [
+{ id: 'a', text: 'Overriding methods in a superclass' },
+{ id: 'b', text: 'Hiding data in a class' },
+{ id: 'c', text: 'Custom implementation of operators for user-defined types' },
+{ id: 'd', text: 'Creating abstract classes' }
+],
+correctAnswer: 'c'
+},
+{
+id: 28,
+text: 'What is the difference between Overloading and Overriding?',
+options: [
+{ id: 'a', text: 'Overloading: same class, different parameters; overriding: subclass, same parameters' },
+{ id: 'b', text: 'Overloading hides data; overriding creates classes' },
+{ id: 'c', text: 'Overloading uses same parameters; overriding uses different' },
+{ id: 'd', text: 'Overloading is runtime; overriding is compile-time' }
+],
+correctAnswer: 'a'
+},
+{
+id: 29,
+text: 'What is Data Abstraction?',
+options: [
+{ id: 'a', text: 'Showing essential features, hiding internal details' },
+{ id: 'b', text: 'Binding data and methods' },
+{ id: 'c', text: 'Overloading operators' },
+{ id: 'd', text: 'Creating subclasses' }
+],
+correctAnswer: 'a'
+},
+{
+id: 30,
+text: 'How is Data Abstraction achieved?',
+options: [
+{ id: 'a', text: 'Using method overloading' },
+{ id: 'b', text: 'Using access modifiers only' },
+{ id: 'c', text: 'Using abstract classes and abstract methods' },
+{ id: 'd', text: 'Using static methods' }
+],
+correctAnswer: 'c'
+},
+{
+id: 31,
+text: 'What is an Abstract Class?',
+options: [
+{ id: 'a', text: 'A class that supports multiple inheritance' },
+{ id: 'b', text: 'A class with only concrete methods' },
+{ id: 'c', text: 'A class with no methods' },
+{ id: 'd', text: 'A class with at least one abstract method, cannot be instantiated' }
+],
+correctAnswer: 'd'
+},
+{
+id: 32,
+text: 'What is the difference between Abstraction and Encapsulation?',
+options: [
+{ id: 'a', text: 'Abstraction hides implementation; encapsulation hides data' },
+{ id: 'b', text: 'Abstraction hides data; encapsulation hides implementation' },
+{ id: 'c', text: 'Abstraction is for methods; encapsulation is for classes' },
+{ id: 'd', text: 'Abstraction uses access modifiers; encapsulation uses interfaces' }
+],
+correctAnswer: 'a'
+},
+{
+id: 33,
+text: 'What are Virtual Functions?',
+options: [
+{ id: 'a', text: 'Methods that cannot be overridden' },
+{ id: 'b', text: 'Functions meant to be overridden in derived classes' },
+{ id: 'c', text: 'Static methods in a class' },
+{ id: 'd', text: 'Methods for garbage collection' }
+],
+correctAnswer: 'b'
+},
+{
+id: 34,
+text: 'What is a Destructor?',
+options: [
+{ id: 'a', text: 'A method called when an object is destroyed for cleanup' },
+{ id: 'b', text: 'A method to initialize objects' },
+{ id: 'c', text: 'A method to hide data' },
+{ id: 'd', text: 'A method to override functions' }
+],
+correctAnswer: 'a'
+},
+{
+id: 35,
+text: 'What is a Copy Constructor?',
+options: [
+{ id: 'a', text: 'A constructor to initialize variables' },
+{ id: 'b', text: 'A constructor for abstract classes' },
+{ id: 'c', text: 'A constructor for static objects' },
+{ id: 'd', text: 'A constructor to create a copy of an existing object' }
+],
+correctAnswer: 'd'
+},
+{
+id: 36,
+text: 'What is finalize() in Java?',
+options: [
+{ id: 'a', text: 'A method for cleanup before garbage collection' },
+{ id: 'b', text: 'A method to initialize objects' },
+{ id: 'c', text: 'A method to create classes' },
+{ id: 'd', text: 'A method for method overriding' }
+],
+correctAnswer: 'a'
+},
+{
+id: 37,
+text: 'What is Garbage Collection (GC)?',
+options: [
+{ id: 'a', text: 'Method overloading' },
+{ id: 'b', text: 'Manual memory allocation' },
+{ id: 'c', text: 'Creating abstract classes' },
+{ id: 'd', text: 'Automatic memory management to reclaim unused memory' }
+],
+correctAnswer: 'd'
+},
+{
+id: 38,
+text: 'What is a Final Variable?',
+options: [
+{ id: 'a', text: 'A variable that can be reassigned' },
+{ id: 'b', text: 'A variable for abstract classes' },
+{ id: 'c', text: 'A variable assigned once, cannot be reassigned' },
+{ id: 'd', text: 'A variable for method overriding' }
+],
+correctAnswer: 'c'
+},
+{
+id: 39,
+text: 'What is a Final Method?',
+options: [
+{ id: 'a', text: 'A method that cannot be overridden' },
+{ id: 'b', text: 'A method that cannot be overloaded' },
+{ id: 'c', text: 'A method only for static calls' },
+{ id: 'd', text: 'A method used only in constructors' }
+],
+correctAnswer: 'a'
+},
+{
+id: 40,
+text: 'What is a Final Class?',
+options: [
+{ id: 'a', text: 'A class that cannot be inherited' },
+{ id: 'b', text: 'A class with no methods' },
+{ id: 'c', text: 'A class that cannot create objects' },
+{ id: 'd', text: 'A class only for static methods' }
+],
+correctAnswer: 'a'
+},
+{
+id: 41,
+text: 'What is Multiple Inheritance?',
+options: [
+{ id: 'a', text: 'A class inheriting from multiple parents' },
+{ id: 'b', text: 'A class implementing multiple interfaces' },
+{ id: 'c', text: 'A class with multiple constructors' },
+{ id: 'd', text: 'A class with multiple variables' }
+],
+correctAnswer: 'a'
+},
+{
+id: 42,
+text: 'Does Java support Multiple Inheritance?',
+options: [
+{ id: 'a', text: 'Yes, via classes' },
+{ id: 'b', text: 'No, but supports it via interfaces' },
+{ id: 'c', text: 'Yes, for all types' },
+{ id: 'd', text: 'Only for static methods' }
+],
+correctAnswer: 'b'
+},
+{
+id: 43,
+text: 'What is an Interface?',
+options: [
+{ id: 'a', text: 'A class with implementation' },
+{ id: 'b', text: 'A blueprint of a class containing abstract methods' },
+{ id: 'c', text: 'A class with constructors' },
+{ id: 'd', text: 'A static class' }
+],
+correctAnswer: 'b'
+},
+{
+id: 44,
+text: 'What is the difference between Abstract Class and Interface?',
+options: [
+{ id: 'a', text: 'Abstract class can have both abstract and concrete methods; interface has only abstract methods' },
+{ id: 'b', text: 'Abstract class cannot have variables; interface can' },
+{ id: 'c', text: 'Interface can have constructors; abstract class cannot' },
+{ id: 'd', text: 'Interface supports multiple inheritance; abstract class does not' }
+],
+correctAnswer: 'a'
+},
+{
+id: 45,
+text: 'What is the use of the "this" keyword?',
+options: [
+{ id: 'a', text: 'Refers to the current instance of the class' },
+{ id: 'b', text: 'Refers to the parent class' },
+{ id: 'c', text: 'Refers to a static variable' },
+{ id: 'd', text: 'Refers to an abstract method' }
+],
+correctAnswer: 'a'
+},
+{
+id: 46,
+text: 'What is the use of the "super" keyword?',
+options: [
+{ id: 'a', text: 'Calls a method in the same class' },
+{ id: 'b', text: 'Refers to the parent class and can call its methods/constructors' },
+{ id: 'c', text: 'Refers to static methods only' },
+{ id: 'd', text: 'Refers to private variables' }
+],
+correctAnswer: 'b'
+},
+{
+id: 47,
+text: 'What is Method Hiding?',
+options: [
+{ id: 'a', text: 'When a static method in a subclass has the same signature as in the superclass' },
+{ id: 'b', text: 'When an instance method is overridden' },
+{ id: 'c', text: 'When a method is private' },
+{ id: 'd', text: 'When a method is abstract' }
+],
+correctAnswer: 'a'
+},
+{
+id: 48,
+text: 'What is the difference between Method Overloading and Method Hiding?',
+options: [
+{ id: 'a', text: 'Overloading: same name, different parameters; Hiding: static method in subclass hides one in superclass' },
+{ id: 'b', text: 'Overloading: runtime; Hiding: compile-time' },
+{ id: 'c', text: 'Overloading hides data; Hiding creates new classes' },
+{ id: 'd', text: 'Overloading is abstract; Hiding is final' }
+],
+correctAnswer: 'a'
+},
+{
+id: 49,
+text: 'What are Pure Virtual Functions?',
+options: [
+{ id: 'd', text: 'Methods for encapsulation' },
+{ id: 'c', text: 'Static methods in a class' },
+{ id: 'b', text: 'Methods without implementation in base class, defined in subclass' },
+{ id: 'a', text: 'Methods with implementation in base class' }
+],
+correctAnswer: 'b'
+},
+{
+id: 50,
+text: 'What is the difference between a Class and a Method?',
+options: [
+{ id: 'b', text: 'Class is a blueprint; method is a function inside a class' },
+{ id: 'a', text: 'Class is a function; method is a blueprint' },
+{ id: 'd', text: 'Class is for inheritance; method is for abstraction' },
+{ id: 'c', text: 'Class is for variables; method is for objects' }
+],
+correctAnswer: 'b'
+},
+{
+id: 51,
+text: 'What is the difference between an Abstract Class and an Interface?',
+options: [
+{ id: 'b', text: 'Abstract class can have concrete methods, single inheritance; interface has abstract methods, multiple inheritance' },
+{ id: 'd', text: 'Abstract class is for variables; interface is for methods' },
+{ id: 'a', text: 'Abstract class has only abstract methods; interface has concrete methods' },
+{ id: 'c', text: 'Abstract class supports multiple inheritance; interface does not' }
+],
+correctAnswer: 'b'
+},
+{
+id: 52,
+text: 'What are the characteristics of an Abstract Class?',
+options: [
+{ id: 'a', text: 'Can be instantiated, only concrete methods' },
+{ id: 'c', text: 'Supports multiple inheritance, no methods' },
+{ id: 'b', text: 'Cannot be instantiated, may have abstract and concrete methods' },
+{ id: 'd', text: 'Only used for static methods' }
+],
+correctAnswer: 'b'
+},
+{
+id: 53,
+text: 'What is Constructor Chaining?',
+options: [
+{ id: 'c', text: 'Overriding constructors' },
+{ id: 'a', text: 'Calling methods from different classes' },
+{ id: 'b', text: 'Calling one constructor from another using this or super' },
+{ id: 'd', text: 'Hiding constructors' }
+],
+correctAnswer: 'b'
+},
+{
+id: 54,
+text: 'What is Coupling?',
+options: [
+{ id: 'b', text: 'Dependency between classes; loose is preferred' },
+{ id: 'd', text: 'Creating abstract methods' },
+{ id: 'a', text: 'High cohesion between methods' },
+{ id: 'c', text: 'Hiding data in a class' }
+],
+correctAnswer: 'b'
+},
+{
+id: 55,
+text: 'Which operators cannot be overloaded?',
+options: [
+{ id: 'b', text: '., .*, ::, ?:' },
+{ id: 'a', text: '+, -, *, /' },
+{ id: 'c', text: '==, !=, <, >' },
+{ id: 'd', text: '&&, ||, !' }
+],
+correctAnswer: 'b'
+},
+{
+id: 56,
+text: 'What is Cohesion?',
+options: [
+{ id: 'a', text: 'Dependency between classes' },
+{ id: 'd', text: 'Overriding methods' },
+{ id: 'c', text: 'Hiding data in a class' },
+{ id: 'b', text: 'How closely related a class’s responsibilities are; high is desirable' }
+],
+correctAnswer: 'b'
+},
+{
+id: 57,
+text: 'What are levels of abstraction?',
+options: [
+{ id: 'b', text: 'Low-level: implementation details; high-level: conceptual models' },
+{ id: 'd', text: 'Levels of method overriding' },
+{ id: 'a', text: 'Types of inheritance' },
+{ id: 'c', text: 'Types of access modifiers' }
+],
+correctAnswer: 'b'
+},
+{
+id: 58,
+text: 'What are the types of variables in OOP?',
+options: [
+{ id: 'c', text: 'Single, multiple, hierarchical' },
+{ id: 'a', text: 'Public, private, protected' },
+{ id: 'b', text: 'Primitive, reference, instance, static, local' },
+{ id: 'd', text: 'Abstract, concrete, virtual' }
+],
+correctAnswer: 'b'
+},
+{
+id: 59,
+text: 'What is Garbage Collection in OOP?',
+options: [
+{ id: 'd', text: 'Creating abstract classes' },
+{ id: 'a', text: 'Manual memory allocation' },
+{ id: 'b', text: 'Automatic memory management to remove unused objects' },
+{ id: 'c', text: 'Method overloading' }
+],
+correctAnswer: 'b'
+},
+{
+id: 60,
+text: 'Can you run Java without OOP?',
+options: [
+{ id: 'a', text: 'Yes, using static methods only' },
+{ id: 'd', text: 'Yes, using procedural code' },
+{ id: 'c', text: 'Yes, using interfaces only' },
+{ id: 'b', text: 'No, Java is fully based on OOP' }
+],
+correctAnswer: 'b'
+},
+{
+id: 61,
+text: 'What is the output of this Java code involving inheritance and method visibility? (Assume a superclass Teacher with method teach() printing "This is a teacher" and a subclass MathsTeacher overriding teach() to print "This is a Maths teacher")',
+options: [
+{ id: 'b', text: 'This is a Maths teacher' },
+{ id: 'c', text: 'No output' },
+{ id: 'a', text: 'This is a teacher' },
+{ id: 'd', text: 'Compile-time error' }
+],
+correctAnswer: 'b'
+},
+{
+id: 62,
+text: 'What is Object-Oriented Programming (OOP)?',
+options: [
+{ id: 'd', text: 'A scripting language for web pages' },
+{ id: 'a', text: 'A paradigm based on functions and procedures' },
+{ id: 'c', text: 'A database management system' },
+{ id: 'b', text: 'A paradigm organizing software as objects with data and methods' }
+],
+correctAnswer: 'b'
+},
+{
+id: 63,
+text: 'What are other programming paradigms besides OOP?',
+options: [
+{ id: 'b', text: 'Imperative (procedural, OOP, parallel), declarative (logical, functional, database)' },
+{ id: 'd', text: 'Public, private, protected' },
+{ id: 'a', text: 'Relational, transactional, analytical' },
+{ id: 'c', text: 'Static, dynamic, virtual' }
+],
+correctAnswer: 'b'
+},
+{
+id: 64,
+text: 'What is the difference between Structured Programming and OOP?',
+options: [
+{ id: 'c', text: 'Structured supports inheritance; OOP does not' },
+{ id: 'a', text: 'Structured is object-based; OOP is procedure-based' },
+{ id: 'b', text: 'Structured is top-down, procedure-based; OOP is bottom-up, object-based' },
+{ id: 'd', text: 'Structured is data-focused; OOP is code-focused' }
+],
+correctAnswer: 'b'
+},
+{
+id: 65,
+text: 'What are common OOP languages?',
+options: [
+{ id: 'd', text: 'XML, JSON, YAML' },
+{ id: 'c', text: 'Bash, Perl, Shell' },
+{ id: 'b', text: 'C++, Java, Python, JavaScript, C#, Ruby' },
+{ id: 'a', text: 'HTML, CSS, SQL' }
+],
+correctAnswer: 'b'
+},
+{
+id: 66,
+text: 'What are Access Specifiers?',
+options: [
+{ id: 'a', text: 'Types of inheritance' },
+{ id: 'b', text: 'Tools for garbage collection' },
+{ id: 'c', text: 'Keywords controlling access: private, protected, public' },
+{ id: 'd', text: 'Methods for method overriding' }
+],
+correctAnswer: 'c'
+},
+{
+id: 67,
+text: 'What is the difference between Interface and Abstract Class?',
+options: [
+{ id: 'a', text: 'Interface supports single inheritance; Abstract class supports multiple' },
+{ id: 'b', text: 'Interface is for variables; Abstract class is for methods' },
+{ id: 'c', text: 'Interface: only abstract methods, multiple inheritance; Abstract class: both method types, single inheritance' },
+{ id: 'd', text: 'Interface has concrete methods; Abstract class has only abstract methods' }
+],
+correctAnswer: 'c'
+},
+{
+id: 68,
+text: 'Do classes occupy memory?',
+options: [
+{ id: 'a', text: 'Only objects consume memory' },
+{ id: 'b', text: 'Yes, classes consume memory like objects' },
+{ id: 'c', text: 'Only abstract classes consume memory' },
+{ id: 'd', text: 'Only static classes consume memory' }
+],
+correctAnswer: 'a'
+},
+{
+id: 69,
+text: 'Is object creation necessary for method access?',
+options: [
+{ id: 'a', text: 'Only for private methods' },
+{ id: 'b', text: 'No, static methods can be accessed via class name' },
+{ id: 'c', text: 'Yes, for all methods' },
+{ id: 'd', text: 'Only for abstract methods' }
+],
+correctAnswer: 'b'
+},
+{
+id: 70,
+text: 'What is the difference between a class and a structure in C++?',
+options: [
+{ id: 'a', text: 'Class: private by default, supports OOP; structure: public by default, limited OOP' },
+{ id: 'b', text: 'Class is for functions; structure is for objects' },
+{ id: 'c', text: 'Class cannot have methods; structure can' },
+{ id: 'd', text: 'Class: public by default; structure: private by default' }
+],
+correctAnswer: 'a'
+},
+{
+id: 71,
+text: 'What is a Constructor?',
+options: [
+{ id: 'a', text: 'A method to override functions' },
+{ id: 'b', text: 'A method to delete objects' },
+{ id: 'c', text: 'A method to hide data' },
+{ id: 'd', text: 'A method to initialize a newly created object' }
+],
+correctAnswer: 'd'
+},
+{
+id: 72,
+text: 'What are the types of constructors in C++?',
+options: [
+{ id: 'a', text: 'Default, non-parameterized, parameterized, copy, move' },
+{ id: 'b', text: 'Abstract, concrete, virtual' },
+{ id: 'c', text: 'Public, private, protected' },
+{ id: 'd', text: 'Single, multiple, hierarchical' }
+],
+correctAnswer: 'a'
+},
+{
+id: 73,
+text: 'Can constructors be overloaded?',
+options: [
+{ id: 'a', text: 'Only in interfaces' },
+{ id: 'b', text: 'Only in abstract classes' },
+{ id: 'c', text: 'Yes, constructors can be overloaded' },
+{ id: 'd', text: 'No, only one constructor per class' }
+],
+correctAnswer: 'c'
+},
+{
+id: 74,
+text: 'Can destructors be overloaded?',
+options: [
+{ id: 'a', text: 'Only in abstract classes' },
+{ id: 'b', text: 'Yes, like constructors' },
+{ id: 'c', text: 'Only in derived classes' },
+{ id: 'd', text: 'No, only one destructor per class' }
+],
+correctAnswer: 'd'
+},
+{
+id: 75,
+text: 'What is a Friend Function?',
+options: [
+{ id: 'a', text: 'A function for method overriding' },
+{ id: 'b', text: 'A function for garbage collection' },
+{ id: 'c', text: 'A function that can access private/protected members of a class' },
+{ id: 'd', text: 'A function to initialize objects' }
+],
+correctAnswer: 'c'
+},
+{
+id: 76,
+text: 'What is a Friend Class?',
+options: [
+{ id: 'a', text: 'A class for method overloading' },
+{ id: 'b', text: 'A class that can access private/protected members of another class' },
+{ id: 'c', text: 'A class with only static methods' },
+{ id: 'd', text: 'A class for abstract methods' }
+],
+correctAnswer: 'b'
+},
+{
+id: 77,
+text: 'What is a Virtual Function?',
+options: [
+{ id: 'a', text: 'A function meant to be overridden for dynamic resolution' },
+{ id: 'b', text: 'A function that cannot be overridden' },
+{ id: 'c', text: 'A static method in a class' },
+{ id: 'd', text: 'A function for encapsulation' }
+],
+correctAnswer: 'a'
+},
+{
+id: 78,
+text: 'What is a Pure Virtual Function?',
+options: [
+{ id: 'a', text: 'A static function in a class' },
+{ id: 'b', text: 'A function with implementation in base class' },
+{ id: 'c', text: 'A function with no body, requires implementation in derived class' },
+{ id: 'd', text: 'A function for method overloading' }
+],
+correctAnswer: 'c'
+},
+{
+id: 79,
+text: 'What is the Super Keyword?',
+options: [
+{ id: 'a', text: 'Creates abstract methods' },
+{ id: 'b', text: 'Calls superclass methods or constructors' },
+{ id: 'c', text: 'Refers to the current object' },
+{ id: 'd', text: 'Handles exceptions' }
+],
+correctAnswer: 'b'
+},
+{
+id: 80,
+text: 'What is the this Keyword?',
+options: [
+{ id: 'a', text: 'Refers to the current object' },
+{ id: 'b', text: 'Calls superclass methods' },
+{ id: 'c', text: 'Creates static methods' },
+{ id: 'd', text: 'Hides data in a class' }
+],
+correctAnswer: 'a'
+},
+{
+id: 81,
+text: 'What are Access Specifiers (Summary)?',
+options: [
+{ id: 'a', text: 'Private: within class; Protected: class and derived; Public: everywhere' },
+{ id: 'b', text: 'Tools for inheritance' },
+{ id: 'c', text: 'Types of polymorphism' },
+{ id: 'd', text: 'Methods for method overriding' }
+],
+correctAnswer: 'a'
+},
+{
+id: 82,
+text: 'What is an Exception?',
+options: [
+{ id: 'c', text: 'A method to initialize objects' },
+{ id: 'a', text: 'A syntax error' },
+{ id: 'b', text: 'An abnormal event during program execution' },
+{ id: 'd', text: 'A type of inheritance' }
+],
+correctAnswer: 'b'
+},
+{
+id: 83,
+text: 'What is Exception Handling?',
+options: [
+{ id: 'd', text: 'Hiding data in a class' },
+{ id: 'a', text: 'Creating abstract classes' },
+{ id: 'b', text: 'Catching and handling exceptions' },
+{ id: 'c', text: 'Overloading methods' }
+],
+correctAnswer: 'b'
+},
+{
+id: 84,
+text: 'What is Garbage Collection?',
+options: [
+{ id: 'b', text: 'Automatic memory management for unused objects' },
+{ id: 'a', text: 'Manual memory allocation' },
+{ id: 'd', text: 'Creating abstract classes' },
+{ id: 'c', text: 'Method overloading' }
+],
+correctAnswer: 'b'
+},
+{
+id: 85,
+text: 'Is Java fully object-oriented?',
+options: [
+{ id: 'a', text: 'No, it supports procedural programming' },
+{ id: 'b', text: 'Yes, it requires OOP principles' },
+{ id: 'c', text: 'Only for static methods' },
+{ id: 'd', text: 'Only for interfaces' }
+],
+correctAnswer: 'b'
+},
+{
+id: 86,
+text: 'What is the output of this C++ code? (class Student { public: string name; }; int main() { Student student1; student1.name = "Rahul"; cout << student1.name; return 0; })',
+options: [
+{ id: 'b', text: 'Rahul' },
+{ id: 'a', text: 'student1' },
+{ id: 'c', text: 'No output' },
+{ id: 'd', text: 'Compile-time error' }
+],
+correctAnswer: 'b'
+},
+{
+id: 87,
+text: 'What are programming paradigms other than OOP?',
+options: [
+{ id: 'b', text: 'Imperative (procedural, OOP, parallel), declarative (logical, functional, database)' },
+{ id: 'd', text: 'Public, private, protected' },
+{ id: 'a', text: 'Relational, transactional, analytical' },
+{ id: 'c', text: 'Static, dynamic, virtual' }
+],
+correctAnswer: 'b'
+},
+{
+id: 88,
+text: 'What are major OOP languages?',
+options: [
+{ id: 'b', text: 'Java, C++, Python, JavaScript, PHP' },
+{ id: 'd', text: 'XML, JSON, YAML' },
+{ id: 'a', text: 'HTML, CSS, SQL' },
+{ id: 'c', text: 'Bash, Perl, Shell' }
+],
+correctAnswer: 'b'
+},
+{
+id: 89,
+text: 'What is a class?',
+options: [
+{ id: 'd', text: 'A database table' },
+{ id: 'b', text: 'A blueprint for objects with data and methods' },
+{ id: 'a', text: 'An instance of an object' },
+{ id: 'c', text: 'A function for procedures' }
+],
+correctAnswer: 'b'
+},
+{
+id: 90,
+text: 'What is an object?',
+options: [
+{ id: 'b', text: 'An instance of a class with state and behavior' },
+{ id: 'a', text: 'A blueprint for classes' },
+{ id: 'd', text: 'A database query' },
+{ id: 'c', text: 'A static method' }
+],
+correctAnswer: 'b'
+},
+{
+id: 91,
+text: 'What is Abstraction?',
+options: [
+{ id: 'b', text: 'Showing essential features, hiding implementation' },
+{ id: 'c', text: 'Overloading operators' },
+{ id: 'a', text: 'Bundling data and methods' },
+{ id: 'd', text: 'Creating subclasses' }
+],
+correctAnswer: 'b'
+},
+{
+id: 92,
+text: 'What are access specifiers?',
+options: [
+{ id: 'b', text: 'Keywords controlling access: public, private, protected' },
+{ id: 'a', text: 'Methods for method overriding' },
+{ id: 'd', text: 'Tools for garbage collection' },
+{ id: 'c', text: 'Types of inheritance' }
+],
+correctAnswer: 'b'
+},
+{
+id: 93,
+text: 'What is the output of this C++ destructor code? (class base { public: ~base() { cout << "Destructor called"; } };)',
+options: [
+{ id: 'a', text: 'Destructor called' },
+{ id: 'b', text: 'No output' },
+{ id: 'c', text: 'base' },
+{ id: 'd', text: 'Compile-time error' }
+],
+correctAnswer: 'a'
+},
+{
+id: 94,
+text: 'Is OOP mandatory in Java?',
+options: [
+{ id: 'a', text: 'Only for interfaces' },
+{ id: 'b', text: 'Only for static methods' },
+{ id: 'c', text: 'No, supports procedural programming' },
+{ id: 'd', text: 'Yes, Java is fully OOP-based' }
+],
+correctAnswer: 'd'
+},
+{
+id: 95,
+text: 'How does C++ support Polymorphism?',
+options: [
+{ id: 'a', text: 'Only through abstract classes' },
+{ id: 'b', text: 'Only through inheritance' },
+{ id: 'c', text: 'Only through static methods' },
+{ id: 'd', text: 'Compile-time: templates, overloading; Runtime: virtual functions' }
+],
+correctAnswer: 'd'
+},
+{
+id: 96,
+text: 'What is an example of Inheritance?',
+options: [
+{ id: 'a', text: 'Overloading methods' },
+{ id: 'b', text: 'Creating virtual functions' },
+{ id: 'c', text: 'Hiding data in a class' },
+{ id: 'd', text: 'Vehicle base class with Car, Truck, Bus inheriting features' }
+],
+correctAnswer: 'd'
+},
+{
+id: 97,
+text: 'What is the output of C++ code with multiple inheritance constructor order? (Assume BaseClass1, BaseClass2, DerivedClass constructors print their names)',
+options: [
+{ id: 'a', text: 'DerivedClass only' },
+{ id: 'b', text: 'BaseClass1, BaseClass2, DerivedClass' },
+{ id: 'c', text: 'DerivedClass, BaseClass1, BaseClass2' },
+{ id: 'd', text: 'No output' }
+],
+correctAnswer: 'b'
+},
+{
+id: 98,
+text: 'What is the output of Java code with static block execution order? (Assume blocks print b, c, a, and main prints 100)',
+options: [
+{ id: 'a', text: '100, a, b, c' },
+{ id: 'b', text: 'b, c, a, 100' },
+{ id: 'c', text: 'a, b, c, 100' },
+{ id: 'd', text: 'No output' }
+],
+correctAnswer: 'b'
+},
+{
+id: 99,
+text: 'What is the output of C++ code with conversion constructor and operator overloading? (Assume prints i = 10, i = 20)',
+options: [
+{ id: 'a', text: 'i = 20, i = 10' },
+{ id: 'b', text: 'Compile-time error' },
+{ id: 'c', text: 'i = 10, i = 20' },
+{ id: 'd', text: 'i = 10' }
+],
+correctAnswer: 'c'
+},
+{
+id: 100,
+text: 'What is the output of Java code with overloaded main method? (Assume main prints Main1)',
+options: [
+{ id: 'a', text: 'Main2' },
+{ id: 'b', text: 'No output' },
+{ id: 'c', text: 'Compile-time error' },
+{ id: 'd', text: 'Main1' }
+],
+correctAnswer: 'd'
+},
+{
+id: 101,
+text: 'What is the output of C++ code with multilevel inheritance method call? (Assume class B overrides method to print Inside B)',
+options: [
+{ id: 'a', text: 'Inside B' },
+{ id: 'b', text: 'No output' },
+{ id: 'c', text: 'Compile-time error' },
+{ id: 'd', text: 'Inside A' }
+],
+correctAnswer: 'a'
 }
                 ],
-                stats: { total: 149, completed: 0, averageScore: 0 }
+                stats: { total: 101, completed: 0, averageScore: 0 }
             },
             {
                 id: 'c',
@@ -6730,5 +6257,6 @@ export class TopicManager {
         return allQuestions;
     }
 }
+
 
 
