@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Assessments Platform</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="main-header">
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <i class="fas fa-code"></i>
+                    <span>ITIverse Pro</span>
+                </div>
+                <div class="nav-controls">
+                    <button id="dark-mode-toggle" class="theme-toggle" title="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <!-- Welcome Section -->
+            <section id="welcome-section" class="section active">
+                <div class="welcome-container">
+                    <div class="welcome-background">
+                        <div class="floating-shapes">
+                            <div class="shape shape-1"></div>
+                            <div class="shape shape-2"></div>
+                            <div class="shape shape-3"></div>
+                            <div class="shape shape-4"></div>
+                            <div class="shape shape-5"></div>
+                        </div>
+                    </div>
+                    <div class="welcome-content">
+                        <div class="welcome-icon">
+                            <div class="terminal-icon">
+                                <div class="terminal-screen">
+                                    <div class="terminal-header">
+                                        <div class="terminal-buttons">
+                                            <span class="terminal-btn close"></span>
+                                            <span class="terminal-btn minimize"></span>
+                                            <span class="terminal-btn maximize"></span>
+                                        </div>
+                                        <div class="terminal-title">ITIverse Terminal</div>
+                                    </div>
+                                    <div class="terminal-content">
+                                        <div class="terminal-line">
+                                            <span class="prompt">$</span>
+                                            <span class="command">welcome</span>
+                                        </div>
+                                        <div class="terminal-line">
+                                            <span class="output">Welcome to ITIverse Pro! 🚀</span>
+                                        </div>
+                                        <div class="terminal-line">
+                                            <span class="prompt">$</span>
+                                            <span class="command">ready</span>
+                                        </div>
+                                        <div class="terminal-line">
+                                            <span class="output">System ready for assessment...</span>
+                                        </div>
+                                        <div class="terminal-line">
+                                            <span class="prompt">$</span>
+                                            <span class="command blinking">_</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="welcome-title">Welcome to ITIverse Pro 🚀</h1>
+                        <p class="welcome-subtitle">Master your technical skills with comprehensive assessments ✨</p>
+                        <button id="enter-app-btn" class="welcome-btn">
+                            <span>Enter the Universe</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Home Section -->
+            <section id="home-section" class="section">
+                <div class="hero-section">
+                    <h1 class="hero-title">Master Your Technical Skills</h1>
+                    <p class="hero-subtitle">Comprehensive MCQ assessments across multiple technologies</p>
+                    <p>Created By <b>Marwan Mokhtar</b></p>
+                    <p>May Allah bless us with success.♥</p>
+                </div>
+
+                <div class="topics-grid" id="topics-grid">
+                    <!-- Topics will be dynamically loaded -->
+                </div>
+            </section>
+
+            <!-- Configuration Section -->
+                        <section id="config-section" class="section">
+                <div class="modern-config-container">
+                    <div class="config-hero">
+                        <div class="config-hero-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="currentColor"/>
+                                <path d="M19 15L19.74 17.74L22.5 18.5L19.74 19.26L19 22L18.26 19.26L15.5 18.5L18.26 17.74L19 15Z" fill="currentColor"/>
+                                <path d="M5 6L5.5 7.5L7 8L5.5 8.5L5 10L4.5 8.5L3 8L4.5 7.5L5 6Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h2 class="config-hero-title">Configure Your Exam</h2>
+                        <p class="config-hero-subtitle">Set your preferences and get ready to test your knowledge</p>
+                    </div>
+                    
+                    <form id="exam-config-form" class="modern-config-form">
+                        <div class="config-controls">
+                            <div class="control-group">
+                                <div class="control-label">
+                                    <div class="control-icon">
+                                        <i class="fas fa-question-circle"></i>
+                                    </div>
+                                    <div class="control-text">
+                                        <h3>Number of Questions</h3>
+                                        <p>Choose how many questions you want to answer</p>
+                                    </div>
+                                </div>
+                                <div class="control-input">
+                                    <div class="flexible-input-container">
+                                        <div class="input-group">
+                                            <div class="input-label">
+                                                <i class="fas fa-edit"></i>
+                                                <span>Custom Number</span>
+                                            </div>
+                                            <div class="number-input-wrapper">
+                                                <button type="button" class="number-btn" data-action="decrease">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+                                                <input type="number" id="question-count" value="20" min="1" max="200" class="number-input">
+                                                <button type="button" class="number-btn" data-action="increase">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="quick-options">
+                                            <span class="quick-label">Quick Select:</span>
+                                            <div class="quick-buttons">
+                                                <button type="button" class="quick-btn" data-value="5">5</button>
+                                                <button type="button" class="quick-btn" data-value="10">10</button>
+                                                <button type="button" class="quick-btn active" data-value="20">20</button>
+                                                <button type="button" class="quick-btn" data-value="30">30</button>
+                                                <button type="button" class="quick-btn" data-value="50">50</button>
+                                                <button type="button" class="quick-btn" data-value="100">100</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selected-value-display">
+                                        <span id="question-count-display">20</span>
+                                        <span class="value-unit">questions selected</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="control-group">
+                                <div class="control-label">
+                                    <div class="control-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="control-text">
+                                        <h3>Time Limit</h3>
+                                        <p>Set the maximum time for your exam</p>
+                                    </div>
+                                </div>
+                                <div class="control-input">
+                                    <div class="flexible-input-container">
+                                        <div class="input-group">
+                                            <div class="input-label">
+                                                <i class="fas fa-clock"></i>
+                                                <span>Custom Time</span>
+                                            </div>
+                                            <div class="number-input-wrapper">
+                                                <button type="button" class="number-btn" data-action="decrease">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+                                                <input type="number" id="time-limit" value="30" min="1" max="300" class="number-input">
+                                                <button type="button" class="number-btn" data-action="increase">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="quick-options">
+                                            <span class="quick-label">Quick Select:</span>
+                                            <div class="quick-buttons">
+                                                <button type="button" class="quick-btn" data-value="5">5m</button>
+                                                <button type="button" class="quick-btn" data-value="15">15m</button>
+                                                <button type="button" class="quick-btn active" data-value="30">30m</button>
+                                                <button type="button" class="quick-btn" data-value="60">1h</button>
+                                                <button type="button" class="quick-btn" data-value="120">2h</button>
+                                                <button type="button" class="quick-btn" data-value="180">3h</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selected-value-display">
+                                        <span id="time-limit-display">30</span>
+                                        <span class="value-unit">minutes selected</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="config-submit">
+                            <button type="submit" class="modern-submit-btn large">
+                                <div class="btn-content">
+                                    <div class="btn-icon">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                    <span>Launch Exam</span>
+                                </div>
+                                <div class="btn-glow"></div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Exam Section -->
+            <section id="exam-section" class="section">
+                <div class="exam-container">
+                    <div class="exam-header">
+                        <div class="exam-info">
+                            <h2 id="exam-title">Exam in Progress</h2>
+                            <div class="exam-meta">
+                                <span id="question-counter">Question 1 of 20</span>
+                                <span id="time-remaining">30:00</span>
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="question-container">
+                        <div class="question-card">
+                            <div class="question-number" id="question-number">Question 1</div>
+                            <div class="question-text" id="question-text"></div>
+                            <div class="question-options" id="question-options">
+                                <!-- Options will be dynamically loaded -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exam-controls">
+                        <button id="prev-btn" class="btn btn-secondary" disabled>
+                            <i class="fas fa-chevron-left"></i> Previous
+                        </button>
+                        <button id="next-btn" class="btn btn-primary">
+                            Next <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button id="finish-btn" class="btn btn-success" style="display: none;">
+                            Finish Exam
+                        </button>
+                    </div>
+                    
+                    <div class="exam-submit-section">
+                        <button id="submit-btn" class="btn btn-warning submit-exam-btn" style="display: none;">
+                            <i class="fas fa-paper-plane"></i> Submit Exam
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="results-section" class="section">
+                <div class="results-container">
+                    <div class="results-card">
+                        <div class="results-header">
+                            <h2>Exam Results</h2>
+                            <div class="score-display">
+                                <div class="score-circle">
+                                    <span id="score-percentage">0%</span>
+                                </div>
+                                <p id="score-text">You scored <span id="correct-count">0</span> out of <span id="total-count">0</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="results-details" id="results-details">
+                            <!-- Detailed results will be populated here -->
+                        </div>
+                        
+                        <div class="wrong-answers-section" id="wrong-answers-section" style="display: none;">
+                            <h3 class="section-subtitle">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                Review Your Mistakes
+                            </h3>
+                            <div class="wrong-answers-list" id="wrong-answers-list">
+                                <!-- Wrong answers will be populated here -->
+                            </div>
+                        </div>
+                        
+                        <div class="results-actions">
+                            <button id="review-btn" class="btn btn-secondary">
+                                <i class="fas fa-eye"></i>
+                                Review All Answers
+                            </button>
+                            <button id="new-exam-btn" class="btn btn-primary">
+                                <i class="fas fa-plus"></i>
+                                New Exam
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="confirmation-modal" id="confirmation-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Confirm Submission</h3>
+                <button class="modal-close" id="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="confirmation-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <p>Are you sure you want to submit your exam?</p>
+                <p class="confirmation-warning">You won't be able to change your answers after submission.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancel-submit">Cancel</button>
+                <button class="btn btn-warning" id="confirm-submit">Submit Exam</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Animated Footer -->
+    <footer class="enhanced-footer">
+        <!-- Animated Background -->
+        <div class="footer-bg-animation">
+            <div class="wave-container">
+                <div class="wave wave-1"></div>
+                <div class="wave wave-2"></div>
+                <div class="wave wave-3"></div>
+            </div>
+            <div class="floating-elements">
+                <div class="floating-element element-1">⚡</div>
+                <div class="floating-element element-2">🚀</div>
+                <div class="floating-element element-3">💻</div>
+                <div class="floating-element element-4">🎯</div>
+                <div class="floating-element element-5">✨</div>
+            </div>
+        </div>
+        
+        <div class="footer-container">
+            <!-- Main Footer Content -->
+            <div class="footer-main-content">
+                <!-- Profile Section -->
+                <div class="profile-section">
+                    <div class="profile-header">
+                        <div class="name-badge">
+                            <div class="badge-icon">
+                                        <img src="assets/images/myphoto.jpg" alt="Profile Image" class="footer-profile-img" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover;" />
+                            </div>
+                               <!-- Removed duplicate profile image wrapper -->
+                            <div class="badge-content">
+                                <h3 class="developer-name">Marwan Mokhtar</h3>
+                                <span class="developer-title">AI Evaluator & Software Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <a href="tel:+201067453557" class="contact-link">
+                                <span class="contact-label">Call</span>
+                                <span class="contact-value">+201067453557</span>
+                            </a>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <a href="https://wa.me/201067453557" class="contact-link" target="_blank">
+                                <span class="contact-label">WhatsApp</span>
+                                <span class="contact-value">Start Chat</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Links Section -->
+                <div class="social-section">
+                    <div class="section-header">
+                        <h4 class="section-title">Let's Connect</h4>
+                        <p class="section-subtitle">Follow Me On Social Platforms</p>
+                    </div>
+                    
+                    <div class="social-grid">
+                        <a href="https://marawan10.github.io/my-portfolio/" class="social-card portfolio-card" target="_blank" title="Portfolio">
+                            <div class="card-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Personal Portfolio</span>
+                                <span class="card-subtitle">Know More About Me</span>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/marawanmokhtar112003/" class="social-card linkedin-card" target="_blank" title="LinkedIn">
+                            <div class="card-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">LinkedIn</span>
+                                <span class="card-subtitle">Contact Me</span>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.facebook.com/MarawanMokhtar101?locale=ar_AR" class="social-card facebook-card" target="_blank" title="Facebook">
+                            <div class="card-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Facebook</span>
+                                <span class="card-subtitle">Connect Socially</span>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/marawan10" class="social-card github-card" target="_blank" title="GitHub">
+                            <div class="card-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">GitHub</span>
+                                <span class="card-subtitle">Code Repository</span>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.instagram.com/marawan_mokhtar10/" class="social-card instagram-card" target="_blank" title="Instagram">
+                            <div class="card-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Instagram</span>
+                                <span class="card-subtitle">Follow Updates</span>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
+
+                        <a href="https://t.me/Marwan_Mokhtar10" class="social-card facebook-card" target="_blank" title="Telegram">
+                            <div class="card-icon">
+                                <i class="fab fa-telegram"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Telegram</span>
+                                <span class="card-subtitle">Start Chat</span>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-center">
+                        <div class="divider-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 3V5M16 3V5M3 8H5M19 8H21M3 12H21M3 16H5M19 16H21M8 19V21M16 19V21M7 7H17V17H7V7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="divider-line"></div>
+                </div>
+                
+                <div class="footer-copyright">
+                    <div class="copyright-content">
+                        <span class="copyright-text">© 2025 ITIverse Pro</span>
+                        <span class="copyright-separator">•</span>
+                        <span class="copyright-author"> Developed by Marwan Mokhtar</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
+
+
